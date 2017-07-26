@@ -1,0 +1,17 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+
+build
+node_modules
+ncp-debug.log
+npm-debug.log
+npm-debug.log.*
+*.sublime-project
+*.sublime-workspace
+report.html
+stats.json
+.idea
+src/assets/languages/src
+tests
+.DS_Store
+newrelic_agent.log
