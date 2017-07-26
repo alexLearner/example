@@ -1,5 +1,3 @@
-# bookimed
-
 ## Installation
 
 ### Insatll nodejs 7.x version
