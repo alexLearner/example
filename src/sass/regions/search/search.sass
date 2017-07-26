@@ -1,0 +1,392 @@
+@import "../../base/core"
+
+@import "search_tabs"
+@import "search_compare"
+@import "search_noresult"
+@import "search_header"
+@import "search_banner"
+@import "search_gallery"
+
+#search
+	width: 100%
+	padding-top: 103px
+	margin-bottom: 36px
+	.breadcrumbs
+		margin-bottom: 20px
+	+mobile
+		padding-top: 123px
+
+.search_h1
+	color: $text
+	margin-bottom: 24px
+	margin-top: 32px
+
+
+#search_more.preloader:not(.active)
+	min-height: 40vh
+	overflow: hidden
+	box-shadow: 0 0 25px #fff 
+	border-radius: 10px
+	overflow: hidden
+	margin-top: 20px
+	transition-duration: .0s !important
+
+#search_items.preloader:not(.active)
+	min-height: 72vh
+	overflow: hidden
+	box-shadow: 0 0 25px #fff 
+	border-radius: 10px
+
+.search_item
+	background: #fff
+	border-radius: 8px 
+	box-shadow: 0 0 0 1px #ebebeb, 1px 1px 4px #D7D7D7
+	padding: 24px 24px 0
+	font-size: 14px
+	color: $text
+	line-height: (21/14)
+	font-weight: 600
+	margin-bottom: 16px
+	display: flex
+	align-items: stretch
+	flex-direction: column
+	position: relative
+	&:last-child
+		margin-bottom: 0
+	a
+		color: $blue
+		&:hover
+			text-decoration: underline
+			
+.search_item_btn
+	font-size: 14px
+	color: $blue
+	display: block
+	border-top: 1px solid #ebebeb
+	padding: 9px 0 10px
+	text-align: center
+	background: #fff
+	font-weight: 600
+	cursor: pointer
+	margin: 0 -24px
+	border-radius: 0 0 4px 4px
+	+td
+	&:hover
+		background: #fafafa
+		text-decoration: none !important
+	+mobile
+		margin-bottom: -20px
+		padding-left: 12px
+		padding-right: 12px
+		border-top: 0
+		
+	
+
+.search_item_content.preloader
+	min-height: 180px
+	&.active
+		min-height: 0
+.search_item_content
+	.block_info.block_info_search.block_info_big
+		font-size: 14px !important
+
+.search_subtitles
+	font-size: 14px
+	line-height: (20/14)
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	margin-bottom: 16px
+	margin-top: 12px
+	.rating_list_text
+		margin-top: -2px
+	.tooltip
+		font-size: 14px
+	.sprite
+		margin-right: 8px
+	>div
+		margin-right: 12px
+		display: flex
+		align-items: center
+.search_item_head
+	display: flex
+	align-items: flex-start
+
+.search_info_left
+	flex: 1
+	margin-bottom: 20px
+
+.search_info
+	flex: 1 auto
+	display: flex
+	justify-content: space-between
+	color: $text
+	flex-wrap: wrap
+	font-weight: 600
+	+tablet
+		flex-wrap: wrap
+.search_info_title
+	font-size: 18px
+	color: $text
+	margin-bottom: 4px
+	line-height: 28px
+
+.search_title
+	font-size: 20px
+	line-height: (28/18)
+	margin-bottom: 4px
+.search_title
+	.rating_list_container
+		height: auto
+	.rating_list
+		flex-wrap: nowrap
+		margin-left: 20px
+.search_item
+	.search_title
+		display: flex
+		align-items: flex-start
+		&:hover
+			text-decoration: none
+.search_subtitle
+	color: $red
+	font-size: 16px
+	font-weight: bold
+	line-height: 24px
+	margin-bottom: 12px
+.search_content
+	margin-top: 4px
+	font-size: 14px
+	line-height: (21/14)
+	*
+		text-align: left !important
+		font-size: 14px
+		line-height: (21/14)
+.search_info_right
+	flex: 1 auto
+	max-width: 288px
+	margin-top: -12px
+	margin-left: 20px
+	text-align: center
+	p
+		color: $gray
+		font-size: 12px
+		max-width: 450px
+		margin: 12px auto 0
+	.btn
+		margin-top: 8px
+		min-width: 282px
+		width: 100%
+
+.search_more
+	padding: 12px 14px
+	text-align: center
+	line-height: 21px
+	font-weight: 600
+	font-size: 14px
+	color: #3b3b38
+	background-color: #fafafa
+	border-radius: 8px
+	cursor: pointer
+	margin: 20px 0 40px
+	overflow: hidden
+	+td
+	&:hover
+		background-color: #fafafa - #111
+
+.search_tabs_info + .search_tab_nav
+	height: auto
+
++mobile
+	.search_more
+		margin: 20px -8px 40px
+
+.search_tabs_info
+	font-weight: 400
+	b, strong
+		font-weight: 600
+
+	.search_place_btn
+		display: block
+
+@media (max-width: 1300px)
+	.search_info
+		flex-direction: column
+	.search_info_right
+		width: 100%
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		align-items: center
+		margin-left: 0
+		margin-top: 12px
+		max-width: 100%
+		padding-bottom: 28px
+		.btn
+			margin-top: 0
+			width: auto
+			flex: 1 auto
+			&:first-child
+				margin-right: 16px
+				
++tablet
+	.search_info_right,
+	.search_info_left
+		padding: 0 	
+		width: 100%
+		max-width: 100%
+		
+		.block_info,
+		.search_content
+			padding-right: 68px
+	.search_info_right
+		padding-bottom: 0
+	.search_info_left
+		min-height: 0
+		margin-bottom: 0
+		padding-bottom: 16px
+	.search_item
+		.search_item_head_rating 
+			top: 5px
+			right: 0	
+
+
+
++tablet-sm
+	.search_info_left
+		.search_content,
+		.block_info 
+			padding-right: 0
+
+	.search_place_content
+		padding: 31px 24px 0
+		&.search_tabs_info
+			padding-bottom: 24px
+
+	.search_tabs_info
+		width: 100% 
+		max-width: 100%
+		//.search_place_btn
+		//	display: block
+		//	color: $text
+		//	font-weight: 600
+		//	margin: 18px -24px 0
+		//	&:hover
+		//		text-decoration: none
+
++mobile
+	.search_place_content.search_tabs_info
+		padding-bottom: 0
+		
+	.search_item
+		border-radius: 0
+		margin: 0 -16px 16px
+		padding-bottom: 20px
+		padding-left: 16px
+		padding-right: 16px
+	.search_title
+		flex-direction: column
+		.rating_list
+			margin-left: 0
+	.search_location
+		margin-bottom: 0
+	.search_item_head
+		flex-direction: column
+		padding-bottom: 0
+	.search_info_left
+		padding-bottom: 0
+	.search_info
+		position: relative
+		width: 100%
+	.search_tabs_nav
+		display: none
+	.search_title
+		color: $blue
+	.block_info_search.block_info
+		padding-right: 30px
+		position: relative
+		.icon
+			position: absolute
+			right: 0
+			top: 0
+			bottom: 0
+			margin: auto
+			+td 
+		+ .search_content
+			overflow: hidden
+			max-height: 0
+			margin-top: 0
+			opacity: 0
+			visibility: hidden
+			+td
+		&.active .icon
+			transform: rotate(180deg) 
+		&.active + .search_content
+			max-height: 1000px
+			margin-top: 12px
+			opacity: 1
+			visibility: visible
+	.search_tabs_mobile_nav 
+		width: 100%
+		display: flex
+		flex-direction: column
+		margin-right: -16px
+	.search_tabs
+		background: #fff
+		padding: 0
+		margin: 0 -16px
+	.search_info
+		min-height: 0
+		flex-direction: column
+	.search_info_right
+		flex-direction: column
+		margin-top: 20px
+		margin-bottom: 20px
+		.btn:first-child
+			margin-right: 0
+			width: 100%
+			max-width: 450px
+		&.mobile
+			display: flex
+	.search_tabs_nav_item
+		height: 46px
+		line-height: 46px
+		border-bottom: 1px solid #ebebeb
+		cursor: pointer
+		padding: 0 16px
+		position: relative
+		&.disabled
+			pointer-events: none
+			tab-index: -1
+			color: $gray
+		&.active
+			.triangle
+				transform: rotate(180deg)
+		.triangle
+			position: absolute
+			right: 16px
+			top: 0
+			bottom: 0
+			margin: auto
+			+td
+	.search_tab
+		padding: 20px 8px
+		margin: 0
+		background-color: #fbfbfb
+	.search_subtitles
+		margin-bottom: 0
+		margin-top: 16px
+		> .tooltip
+			display: none
+		
+	.search_more
+		border-radius: 0
+		margin: 0 -16px 
+
++mobile-sm
+	.search_subtitles
+		flex-direction: column
+		align-items: flex-start
+		>div
+			margin-bottom: 8px
+			&:last-child
+				margin-bottom: 0

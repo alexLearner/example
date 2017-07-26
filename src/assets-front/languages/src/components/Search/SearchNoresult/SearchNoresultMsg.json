@@ -1,0 +1,18 @@
+[
+  {
+    "id": "search.noresult.clinics",
+    "defaultMessage": "Клиники"
+  },
+  {
+    "id": "search.noresult.at_req",
+    "defaultMessage": "по запросу"
+  },
+  {
+    "id": "search.noresult.not_found",
+    "defaultMessage": "не найдены"
+  },
+  {
+    "id": "in",
+    "defaultMessage": "в"
+  }
+]

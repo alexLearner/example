@@ -1,0 +1,58 @@
+[
+  {
+    "id": "search.transfer.star_label",
+    "defaultMessage": "* отели"
+  },
+  {
+    "id": "search.transfer.time_way",
+    "defaultMessage": "Время в пути"
+  },
+  {
+    "id": "search.transfer.check_bilet",
+    "defaultMessage": "Выбрать билеты"
+  },
+  {
+    "id": "search.transfer.hotels_around",
+    "defaultMessage": "Отели рядом"
+  },
+  {
+    "id": "search.transfer.hotels_armor_early",
+    "defaultMessage": "Бронируйте номер заранее"
+  },
+  {
+    "id": "search.transfer.hotels_armor",
+    "defaultMessage": "Забронировать номера"
+  },
+  {
+    "id": "search.full_day",
+    "defaultMessage": "сутки"
+  },
+  {
+    "id": "search.transfer.room_0",
+    "defaultMessage": "room_0"
+  },
+  {
+    "id": "search.transfer.room_1",
+    "defaultMessage": "1-местный"
+  },
+  {
+    "id": "search.transfer.room_2",
+    "defaultMessage": "2-местный"
+  },
+  {
+    "id": "search.transfer.room_3",
+    "defaultMessage": "3-местный"
+  },
+  {
+    "id": "search.transfer.room_4",
+    "defaultMessage": "4-местный"
+  },
+  {
+    "id": "search.transfer.room_5",
+    "defaultMessage": "5-местный"
+  },
+  {
+    "id": "search.offers_count",
+    "defaultMessage": "{count} предложений на"
+  }
+]

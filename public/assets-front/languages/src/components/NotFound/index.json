@@ -1,0 +1,18 @@
+[
+  {
+    "id": "not_found.title",
+    "defaultMessage": "К сожалению, такой страницы не существует"
+  },
+  {
+    "id": "not_found.search_apply",
+    "defaultMessage": "Воспользуйтесь,"
+  },
+  {
+    "id": "not_found.search_move",
+    "defaultMessage": "Перейдите на"
+  },
+  {
+    "id": "not_found.main",
+    "defaultMessage": "главную"
+  }
+]

@@ -1,0 +1,39 @@
+.search_tab_nav
+	display: flex
+	align-items: center
+	height: 100%
+	justify-content: center
+	flex-direction: column
+	margin-left: 17px
+	font-size: 13px
+	line-height: 21px
+	background: #fafafa
+	flex: 1 auto
+	min-height: 145px
+	min-width: 192px
+	cursor: pointer
+	img
+		+td
+		opacity: .6
+	p
+		color: $text
+		margin: 12px 0 4px
+	+td
+	span
+		color: $gray
+		+td
+	&:hover
+		background: #fafafa - #111
+		color: #000
+		text-decoration: none !important
+		span
+			color: #000
+		img
+			opacity: 1
+	path
+		+td
+		fill: $gray
++mobile
+	.search_tabs_info + .search_tab_nav
+		display: none
+	

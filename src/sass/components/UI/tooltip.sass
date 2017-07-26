@@ -1,0 +1,140 @@
+.tooltip
+	font-size: 12px
+	position: relative
+
+.tooltip_title
+	display: flex
+	position: relative
+	align-items: center
+	color: $gray
+	font-size: 13px
+	cursor: pointer
+	&:hover
+		span
+			border-color: transparent
+	span
+		border-bottom: 1px dotted currentColor
+		color: gray
+		+td
+	.icon
+    margin-right: 9px
+.tooltip.circle:before
+	content: ""
+	display: inline-block
+	border-radius: 100%
+	margin-right: 9px
+	background: gray
+	width: 4px
+	height: 4px
+.tooltip_container
+	//	display: none !important
+	background: #fff
+	position: absolute
+	padding: 24px 20px 20px
+	right: -16px
+	left: -999999px
+	top: 100%
+	max-width: 320px
+	margin-top: 8px
+	width: 100vw
+	border: 2px solid #e0e0e0
+	border-radius: 4px
+	z-index: 2
+	font-size: 12px
+	color: $text
+	font-weight: 600
+	max-height: 0
+	opacity: 0
+	transition: opacity .3s
+	overflow: hidden
+	&.active
+		opacity: 1
+		visibility: visible
+		overflow: visible
+		left: -50px
+		right: auto
+		max-height: initial
+		.triangle
+			left: 60px
+			right: auto
+	.triangle
+		transform: rotate(180deg)
+		position: absolute
+		right: 20px
+		top: -12px
+		z-index: 1
+		width: 20px
+		height: 12px
+		&:before
+			border-width: 10px 10px 0 10px
+			border-style: solid
+			border-color: #e0e0e0 transparent transparent transparent
+		&:after
+			border-width: 8px 8px 0 8px
+			border-style: solid
+			border-color: #fff transparent transparent transparent
+			top: 0
+			left: 2px
+	p
+		max-width: 220px
+		line-height: (16/12)
+
+.tooltip_link .tooltip_title span
+	color: $blue
+	font-size: 16px
+	border-bottom: 0
+		
+.tooltip_right
+	.tooltip_container.active
+		right: -50px
+		left: auto
+		.triangle
+			left: auto
+			right: 50px
+
+.tooltip.tooltip_rating
+	.tooltip_container
+		width: 240px
+		margin-left: -115px
+	.triangle,
+	.tooltip_container
+		left: 0
+		right: 0
+	.triangle
+		margin: 0 auto
+		
+
++tablet
+	.tooltip_container.active
+		right: -50px
+		left: auto
+		
+		.triangle
+			left: 15px
+			right: auto
+			
+	.tooltip.tooltip_rating .active
+		.triangle
+			left: 108px
+			
+	.tooltip_right
+		.tooltip_container.active
+			right: -50px
+			left: auto
+			.triangle
+				left: 30px
+				right: auto
+
++mobile
+	.tooltip_container.active
+		width: 280px
+		max-width: 280px
+		left: 0
+
+	.tooltip_right
+		.tooltip_container.active
+			left: 0
+			right: auto
+		.rating_line_bg
+			right: 0
+			// left: auto

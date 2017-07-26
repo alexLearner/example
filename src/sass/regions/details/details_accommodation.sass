@@ -1,0 +1,122 @@
+.details_accommodation_title
+	font-size: 16px
+	line-height: 48px
+	margin-top: 12px
+
+.details_accommodation_subtitle
+	font-size: 13px
+	font-weight: 600
+	line-height: 24px
+	margin-bottom: 20px
+.details_accommodation_content
+	font-size: 14px
+
+.details_accommodation_map
+	max-width: 602px
+	width: 100% 
+	border: 1px solid #B2B2B2
+
+.details_accommodation_header
+	display: flex
+	margin-bottom: 48px
+
+.details_accommodation_header_left
+	flex: 1 auto
+
+.details_accommodation_header_right
+	max-width: 602px
+	min-width: 602px
+	flex: 1 auto
+	margin-left: 77px
+
+.details_accommodation_footer
+
+.details_accommodation_images
+	display: flex
+	align-items: center
+	margin: 12px 0 30px
+	img
+		max-width: 100px
+		margin-right: 8px
+		&:last-child
+			margin-right: 0
+
+.details_accommodation_field
+	line-height: (23/14)
+	margin-bottom: 40px
+	display: table
+	width: 100%
+	table-layout: fixed
+	&:last-child
+		margin-bottom: 0
+	> div
+		display: table-cell
+		vertical-align: top
+		&:first-child
+			width: 290px
+			padding-right: 32px
+			font-size: 16px
+			font-weight: normal
+
+.details_accommodation_caption
+	margin-top: 6px
+	max-width: 100%
+	display: inline-block
+	padding-top: 4px 
+	padding-bottom: 5px
+
+.details_accommodation_field_item
+	margin-bottom: 20px
+	font-size: 14px
+	p, a, div
+		max-width: 520px
+		margin-bottom: 12px
+		&:last-child
+			margin-bottom: 0
+
+.details_accommodation_field_content
+	font-weight: normal
+	+ .details_accommodation_caption
+		margin-top: 20px
+
+
+@import "details_hotels"
+
++tablet
+	.details_accommodation_header
+		flex-direction: column
+	.details_accommodation_header_left
+		max-width: 500px
+	.details_accommodation_header_right
+		margin-left: 0	
+		margin-top: 24px
+
+@media(max-width: 800px)
+	.details_accommodation
+		padding: 12px
+	.details_accommodation_field > div:first-child
+		width: 210px
+
+	.details_accommodation_header_right
+		min-width: 100%
+		width: 100%
+
++mobile-sm
+	.details_accommodation_header
+		display: none
+
+	.details_accommodation_field
+		display: block
+		> div
+			display: block
+			width: 100%
+			&:first-child
+				margin-bottom: 16px
+
+	.details_accommodation_field_content
+		+ .details_accommodation_caption
+			margin-top: 0
+	.details_accommodation_caption:not(.orange)
+		color: $green
+		background: transparent
+		padding: 0

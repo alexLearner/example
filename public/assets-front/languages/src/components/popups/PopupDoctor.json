@@ -1,0 +1,54 @@
+[
+  {
+    "id": "popup.close",
+    "defaultMessage": "Закрыть"
+  },
+  {
+    "id": "search.doctor.info",
+    "defaultMessage": "Общая информация"
+  },
+  {
+    "id": "search.doctor.reviews",
+    "defaultMessage": "Отзывы"
+  },
+  {
+    "id": "search.doctor.other",
+    "defaultMessage": "Специалисты в других клиниках"
+  },
+  {
+    "id": "search.doctor.direction",
+    "defaultMessage": "Специализация"
+  },
+  {
+    "id": "search.reviews.video",
+    "defaultMessage": "Видео-отзыв"
+  },
+  {
+    "id": "search.reviews.photo",
+    "defaultMessage": "Фото-отзыв"
+  },
+  {
+    "id": "search.reviews.read_all_review",
+    "defaultMessage": "Читать весь отзыв"
+  },
+  {
+    "id": "search.doctor.degree",
+    "defaultMessage": "Стаж"
+  },
+  {
+    "id": "search.doctor.year",
+    "defaultMessage": "лет"
+  },
+  {
+    "id": "search.doctor.cost",
+    "defaultMessage": "Стоимость консультации"
+  },
+  {
+    "id": "search.doctor.go_consultation",
+    "defaultMessage": "Записаться на консультацию"
+  },
+  {
+    "id": "search.doctor.more",
+    "defaultMessage": "Подробнее о специалисте"
+  }
+]

@@ -1,0 +1,142 @@
+.block
+	padding: 0 24px
+	max-width: 1360px
+	width: 100%
+	margin: 0 auto
+
+	&_title
+		color: $blue
+		font-size: 14px
+		font-weight: 600
+		line-height: 21px
+		margin-bottom: 5px
+		display: flex
+		align-items: center
+		.icon_back
+			margin-right: 10px
+			cursor: pointer
+			margin-bottom: -2px
+			+td
+			&:hover
+				opacity: .6
+		&.block_title_rating
+			padding-right: 50px
+		&.block_title_big
+			font-size: 16px
+		a:hover
+			text-decoration: underline
+		&.block_title_link
+			cursor: pointer
+			&:hover
+				text-decoration: underline
+	
+	&_subtitle
+		font-size: 13px
+		color: $gray
+		margin-top: 4px
+		.sprite
+			margin-right: 10px
+			margin-top: -2px
+			
+	&_content_info
+		font-size: 13px
+		font-weight: 600
+		color: $text
+		margin: 8px 0 12px
+		line-height: 21px
+	
+	&_content
+		position: relative
+		font-size: 13px
+		line-height: (21/13)
+		color: #202020
+		font-weight: normal
+		margin: 10px 0
+		h1, h2, h3, h4, h5, h6
+			margin: 1.5em 0
+		b, strong
+			font-weight: 600
+		&.nostyles
+			img
+				max-width: 100% !important
+			p
+				margin: .5em 0
+			ul
+				margin: 20px 0
+				font-size: 13px
+				font-weight: 600
+				line-height: 23px
+				margin-left: 16px
+			li
+				margin: initial
+				&:last-child
+					margin-bottom: 0
+		&:first-child
+			margin-top: 0
+		&:last-child
+			margin-bottom: 0
+		p
+			margin: 24px 0
+			&:last-child
+				margin-bottom: 0
+			&:first-child
+				margin-top: 0
+		a
+			color: #006bb2
+			font-weight: 600
+			&:hover
+				text-decoration: underline
+		.icon_content
+			position: absolute
+			z-index: -1
+			top: -18px
+			left: 5px
+
+	&_cost
+		font-size: 14px
+		font-weight: 600
+		line-height: 23px
+		color: $black
+	&_btns
+		display: flex
+		margin-top: 20px
+		align-items: center
+		.btn
+			flex: 1 auto
+			width: 50%
+			// min-width: 50%
+			&:first-child
+				margin-right: 16px
+	&_info
+		margin-top: 8px
+		color: $red
+		font-weight: bold
+		line-height: 24px
+		&.block_info_big
+			font-size: 13px
+	&_time
+		font-size: 13px
+		color: $gray
+		
+
++tablet
+	.block
+		padding: 0 16px
+
++mobile
+	.mobile
+		visibility: visible
+		max-height: initial
+		max-width: initial
+
++mobile-sm
+	.block_btns
+		flex-direction: column
+		.btn
+			width: 100%
+			&:first-child
+				margin-right: 0
+				margin-bottom: 8px
+			&:last-child
+				margin-top: 0
+			

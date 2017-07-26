@@ -1,0 +1,45 @@
+.review_form
+	background: #fff
+	box-shadow: 0 4px 4px rgba(0,0,0, .25)
+	padding: 16px 0 32px
+	font-weight: 600
+	font-size: 14px
+	margin: 16px 0 20px
+
+.review_form_title
+	line-height: (42/20)
+	color: $text
+	margin-bottom: 12px 
+
+.review_form_body
+	display: flex
+	align-items: center
+	p
+		margin-right: 32px
+	.btn
+		margin-right: 16px
+
+.review_form_hidden
+	margin-top: 40px
+	max-width: 514px
+	width: 100%
+	.btn
+		width: 100%
+.review_form_field
+	margin-bottom: 16px	
+	label, p
+		display: block
+		margin-bottom: 8px
+	sup
+		display: inline-block
+		vertical-align: top
+		color: $red
+		margin-left: 4px
+
++mobile
+	.review_form_body
+		flex-wrap: wrap
+		p
+			margin-right: 0
+			width: 100%
+			margin-bottom: 12px

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "yes",
+    "defaultMessage": "Да"
+  },
+  {
+    "id": "no",
+    "defaultMessage": "Нет"
+  },
+  {
+    "id": "review_form.is_you_found",
+    "defaultMessage": "Вы нашли то, что искали?"
+  },
+  {
+    "id": "review_form.placeholder",
+    "defaultMessage": "Например, на вкладке докторов не хватает специализации."
+  },
+  {
+    "id": "review_form.leave_review",
+    "defaultMessage": "Отзыв о странице"
+  },
+  {
+    "id": "review_form.positive_text",
+    "defaultMessage": "Расскажите нам о том, что Вам понравилось. Ваши комментарии позволят сделать наш сайт полезнее для всех!"
+  },
+  {
+    "id": "review_form.negative_text",
+    "defaultMessage": "Опишите, пожалуйста, проблему"
+  },
+  {
+    "id": "review_form.negative_title",
+    "defaultMessage": "Укажите категорию проблемы, которая лучше всего ее описывает"
+  },
+  {
+    "id": "review_form.comment",
+    "defaultMessage": "Оставить комментарий"
+  }
+]

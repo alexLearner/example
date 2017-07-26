@@ -1,0 +1,38 @@
+[
+  {
+    "id": "search.tabs.more",
+    "defaultMessage": "Читать дальше"
+  },
+  {
+    "id": "search.tabs.more_on_clinic",
+    "defaultMessage": "Читать больше на странице клиники"
+  },
+  {
+    "id": "search.nav.info",
+    "defaultMessage": "Описание"
+  },
+  {
+    "id": "in",
+    "defaultMessage": "в"
+  },
+  {
+    "id": "search.nav.reviews",
+    "defaultMessage": "Отзывы"
+  },
+  {
+    "id": "search.nav.doctors",
+    "defaultMessage": "Специалисты"
+  },
+  {
+    "id": "search.nav.diagnostics",
+    "defaultMessage": "Стоимость услуг"
+  },
+  {
+    "id": "search.nav.flights",
+    "defaultMessage": "Стоимость перелёта"
+  },
+  {
+    "id": "search.nav.on_page",
+    "defaultMessage": "на странице клиники"
+  }
+]

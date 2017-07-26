@@ -1,0 +1,10 @@
+[
+  {
+    "id": "search.articles.title",
+    "defaultMessage": "Вам это может быть интересно"
+  },
+  {
+    "id": "search.articles.all",
+    "defaultMessage": "Все статьи"
+  }
+]

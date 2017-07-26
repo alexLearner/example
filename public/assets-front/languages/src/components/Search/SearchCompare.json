@@ -1,0 +1,38 @@
+[
+  {
+    "id": "search.compare.current_text",
+    "defaultMessage": "Текущая страна"
+  },
+  {
+    "id": "search.compare.cost_services",
+    "defaultMessage": "Стоимость услуг"
+  },
+  {
+    "id": "search.compare.cost_hotel",
+    "defaultMessage": "Проживание в отеле"
+  },
+  {
+    "id": "search.compare.day",
+    "defaultMessage": "сутки"
+  },
+  {
+    "id": "search.compare.cost_transfer",
+    "defaultMessage": "Стоимость перелета"
+  },
+  {
+    "id": "search.compare.clinics_in",
+    "defaultMessage": "клиники в"
+  },
+  {
+    "id": "search.compare.cost_in_other_country",
+    "defaultMessage": "Цены на лечение в других странах"
+  },
+  {
+    "id": "search.compare.add_country",
+    "defaultMessage": "Добавить страны"
+  },
+  {
+    "id": "search.compare.for_compare",
+    "defaultMessage": "для сравнения"
+  }
+]

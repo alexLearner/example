@@ -1,0 +1,94 @@
+.details_banner
+	display: flex
+	flex: 0
+	flex-direction: column
+	font-size: 14px
+	.details_header_btn
+		display: none
+	.rating_list_container
+		display: inline-block
+		vertical-align: middle
+	+tablet
+		.details_header_btn
+			display: flex
+
+.details_banner_body
+	width: 100%
+.details_banner_header
+	display: flex
+	margin: 0 -12px 26px
+	&:empty
+		display: none
+	>div>span
+		font-size: 16px
+	+tablet
+		>div:first-child
+			display: none
+		>div:last-child
+			width: 100%
+			display: block
+			.details_banner_title
+				width: 100%
+				display: block
+			> span, > div
+				display: inline-block
+				vertical-align: middle
+			// flex-direction: column
+
+.details_banner_footer
+	display: none
+	+tablet
+		display: block
+
+.details_banner_title
+	color: $gray
+	font-size: 13px
+	margin-bottom: 12px
+	display: flex
+	align-items: center
+	min-width: 100%
+	
+.details_banner_right
+	align-items: center
+
+.size1of2
+	width: 50%
+	padding: 0 12px
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+.details_header_btn > span
+	text-align: center
+	justify-content: center
++mobile
+	.details_banner_body
+		display: none
+	.details_banner .details_header_btn
+		margin-top: 0
+	.details_banner_header
+		> div
+			width: 100%
+			flex-wrap: nowrap
+			flex-direction: row
+			align-items: center
+			justify-content: space-between
+			border-bottom: 1px solid #CCCCCC
+			padding: 0 0 12px 0
+			margin: 0 12px
+	.details_banner_title
+		min-width: 0
+		margin-bottom: 0
+		color: $text
+		font-size: 14px
+		align-items: flex-start
+		line-height: (32/14)
+	.details_banner
+		margin-bottom: 20px
+		margin-top: 24px
+
+
++mobile-sm
+	.details_banner_header
+		>div
+			flex-direction: column 
+			align-items: flex-start

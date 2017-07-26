@@ -1,0 +1,38 @@
+[
+  {
+    "id": "header_search.recent",
+    "defaultMessage": "Недавние запросы"
+  },
+  {
+    "id": "header_search.advanced_search",
+    "defaultMessage": "header_search.advanced_search"
+  },
+  {
+    "id": "header_search.result",
+    "defaultMessage": "Недавние запросы"
+  },
+  {
+    "id": "header_search.placeholder",
+    "defaultMessage": "Поиск по Bookimed"
+  },
+  {
+    "id": "header_search.illnesses",
+    "defaultMessage": "Заболевания"
+  },
+  {
+    "id": "header_search.directions",
+    "defaultMessage": "Направления"
+  },
+  {
+    "id": "header_search.procedures",
+    "defaultMessage": "Процедуры"
+  },
+  {
+    "id": "header_search.doctors",
+    "defaultMessage": "Врачи"
+  },
+  {
+    "id": "header_search.clinics",
+    "defaultMessage": "Клиники"
+  }
+]

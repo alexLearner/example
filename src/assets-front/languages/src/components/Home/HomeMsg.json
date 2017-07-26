@@ -1,0 +1,34 @@
+[
+  {
+    "id": "home.titles.countries",
+    "defaultMessage": "Популярные страны"
+  },
+  {
+    "id": "home.titles.clinics",
+    "defaultMessage": "Популярные клиники"
+  },
+  {
+    "id": "home.all.clinics",
+    "defaultMessage": "Все клиники"
+  },
+  {
+    "id": "home.all.show",
+    "defaultMessage": "Показать все"
+  },
+  {
+    "id": "home.titles.procedures",
+    "defaultMessage": "Процедуры"
+  },
+  {
+    "id": "home.titles.articles",
+    "defaultMessage": "Cтатьи"
+  },
+  {
+    "id": "home.titles.coordinators",
+    "defaultMessage": "Координаторы Bookimed"
+  },
+  {
+    "id": "home.titles.faq",
+    "defaultMessage": "Лечение за рубежом с международным центром поддержки пациентов Bookimed"
+  }
+]

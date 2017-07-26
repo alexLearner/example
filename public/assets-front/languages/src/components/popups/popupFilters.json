@@ -1,0 +1,46 @@
+[
+  {
+    "id": "popup.close",
+    "defaultMessage": "Закрыть"
+  },
+  {
+    "id": "filters.params",
+    "defaultMessage": "Параметры поиска"
+  },
+  {
+    "id": "filters.country",
+    "defaultMessage": "Страна"
+  },
+  {
+    "id": "filters.illness",
+    "defaultMessage": "Заболевание"
+  },
+  {
+    "id": "filters.city",
+    "defaultMessage": "Город"
+  },
+  {
+    "id": "filters.update",
+    "defaultMessage": "Обновить результаты поиска"
+  },
+  {
+    "id": "popup.cancel",
+    "defaultMessage": "Отмена"
+  },
+  {
+    "id": "popup.reset",
+    "defaultMessage": "сбросить"
+  },
+  {
+    "id": "filters.all_country",
+    "defaultMessage": "По всем странам"
+  },
+  {
+    "id": "filters.all_city",
+    "defaultMessage": "По всем городам"
+  },
+  {
+    "id": "filters.all_illness",
+    "defaultMessage": "По всем болезням"
+  }
+]

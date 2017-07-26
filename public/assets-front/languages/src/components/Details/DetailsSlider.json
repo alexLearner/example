@@ -1,0 +1,10 @@
+[
+  {
+    "id": "details.popularity_reviews",
+    "defaultMessage": "Популярные отзывы"
+  },
+  {
+    "id": "details.reviews",
+    "defaultMessage": "{count} отзывов"
+  }
+]

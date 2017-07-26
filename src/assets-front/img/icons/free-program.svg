@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>free-program</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="free-program">
+            <g id="Group-3" transform="translate(0.000000, 5.000000)">
+                <path d="M7,17.5 C6.99312814,18.1162344 6.82413034,18.719798 6.51,19.25 L6.06,20 L18.5,20 C19.1650306,20.0065602 19.8047342,19.7452753 20.2750047,19.2750047 C20.7452753,18.8047342 21.0065602,18.1650306 21,17.5 L21,16 L7,16 L7,17.5 L7,17.5 Z" id="Shape"></path>
+                <path d="M6,15 L6,17.5 C6,18.8807119 4.88071187,20 3.5,20 C2.11928813,20 1,18.8807119 1,17.5 L1,1 L17,1 L17,13 L18,13 L18,0 L0,0 L0,17.5 C0.00214932727,19.4321056 1.56789436,20.9978507 3.5,21 L18.5,21 C20.4321056,20.9978507 21.9978507,19.4321056 22,17.5 L22,15 L6,15 L6,15 Z M21,17.5 C21.0065602,18.1650306 20.7452753,18.8047342 20.2750047,19.2750047 C19.8047342,19.7452753 19.1650306,20.0065602 18.5,20 L6.06,20 L6.51,19.25 C6.82413034,18.719798 6.99312814,18.1162344 7,17.5 L7,16 L21,16 L21,17.5 L21,17.5 Z" id="Shape" fill="#4A4A4A"></path>
+                <rect id="Rectangle-path" fill="#4A4A4A" x="8" y="6" width="6" height="1"></rect>
+                <rect id="Rectangle-path" fill="#4A4A4A" x="4" y="10" width="1" height="1"></rect>
+                <rect id="Rectangle-path" fill="#4A4A4A" x="4" y="6" width="1" height="1"></rect>
+                <rect id="Rectangle-path" fill="#4A4A4A" x="8" y="10" width="6" height="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

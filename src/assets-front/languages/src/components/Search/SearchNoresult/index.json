@@ -1,0 +1,26 @@
+[
+  {
+    "id": "search.noresult.similar",
+    "defaultMessage": "Выберите один из похожих запросов, или воспользуйтесь поиском"
+  },
+  {
+    "id": "filters.all_country",
+    "defaultMessage": "По всем странам"
+  },
+  {
+    "id": "filters.all_city",
+    "defaultMessage": "По всем городам"
+  },
+  {
+    "id": "filters.all_illness",
+    "defaultMessage": "По всем болезням"
+  },
+  {
+    "id": "filters.more_often",
+    "defaultMessage": "Чаще всего ищут"
+  },
+  {
+    "id": "filters.clinics",
+    "defaultMessage": "24 клиники"
+  }
+]

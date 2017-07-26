@@ -1,0 +1,251 @@
+.details_tabs_nav
+	@extend .search_tabs_nav
+	position: static !important
+	justify-content: flex-start
+	border-bottom: 1px solid #E0E0E0
+	margin-bottom: 20px
+	margin-top: 20px
+	margin-left: 0
+	top: 81px
+	transition: top .3s  
+	&.fixed
+		position: fixed !important
+		padding-bottom: 0
+		z-index: 1000
+		top: 72px
+		left: 0
+		border-bottom: 0
+		right: 0
+		font-size: 12px
+		background: transparent
+		margin: auto
+		bottom: auto
+		.details_tabs_nav_item
+			padding-bottom: 6px
+		> a
+			position: relative
+			z-index: 2
+		+ div + div
+			margin-top: 71px
+		@extend .block	
+
+.details_tabs_nav_item
+	@extend .search_tabs_nav_item
+	margin-right: 56px
+
+.details_tabs_body
+	h1,h2,h3,h4,h5,h6
+		color: $text
+		span
+			color: $gray
+
+
+.details_tabs_body
+	> div
+		+td
+		top: auto
+		position: relative
+		opacity: 1
+		visibility: visible
+		&.hidden
+			opacity: 0
+			visibility: hidden
+			position: absolute
+			top: -99999px
+
+
+.details_doctors,
+.details_procedures
+	display: flex
+
+.details_tabs_header
+	margin-bottom: 24px
+
+.details_tabs_footer
+	margin-top: 20px
+
+.details_tabs_block,
+.details_accommodation
+	display: flex
+	&.preloader
+		min-height: 400px
+	&.active.preloader
+		min-height: 200px
+	>div:first-child
+		padding-right: 86px
+.details_accommodation
+	display: block
+
+.details_procedures_help
+	margin-top: 48px
+	display: flex
+	justify-content: space-between
+	font-size: 16px
+	align-items: center
+	.btn
+		max-width: 360px
+	+mobile
+		font-size: 14px
+
+.details_tabs_nav_circle
+	border-radius: 100%
+	width: 24px
+	height: 24px
+	position: absolute
+	right: 18px
+	top: 0
+	bottom: 0 
+	margin: auto
+	background: #eee
+	display: none
+	+triangle_bg($text, #eee)
+
+	.triangle
+		left: 0
+		right: 0
+		bottom: 0
+		// top: 
+		margin: auto
+
+
++tablet
+	.details_tabs_nav
+		justify-content: space-between
+	.details_tabs_nav_item
+		margin-right: 0
+
+	.details_tabs_block
+		flex-direction: column
+		> div
+			width: 100%
+			padding-right: 12px
+		> div:last-child
+				order: 1
+				margin-bottom: 20px
+				justify-content: flex-end
+				display: flex
+				.btn
+					min-width: 250px
+		> div:first-child
+				order: 2
+
+@media (max-width: 860px)
+	.details_tabs_block
+		>div:first-child
+			padding: 12px 12px 0
+
++mobile
+	.details_tabs
+		box-shadow: none
+
+	.details_body
+		>div
+			padding: 0 !important
+
+	.details_tabs_nav_circle
+		display: flex
+	.details_tabs_nav
+		display: none
+	.details_tabs
+		margin: 0 -16px
+	.details_tabs_nav_item
+		display: block
+		border-bottom: 0 !important
+		span
+			color: $gray
+			margin-left: 12px
+		&.active, &:hover
+			color: $text
+		&.active
+			box-shadow: 0 1px 4px #E0E0E0
+			border-radius: 0 0 4px 4px
+			overflow: hidden
+
+	.details_tabs_body
+		margin: 0
+		background: #fafafa
+		> div
+			padding: 16px
+		.details_procedures
+			padding-bottom: 150px
+			
+	.details_tabs_block >div:first-child,
+	.details_accommodation,
+	.details_info
+		background: #fff
+		border-radius: 4px
+		position: relative
+		box-shadow: 0 1px 4px #E0E0E0
+
+	.details_doctors,
+	.details_procedures
+		>div:first-child
+			margin-top: 56px
+
+	.details_procedures
+		.details_tabs_footer
+			margin-top: 0
+
+	.details_tabs_footer
+		margin: 20px -12px 0
+		.btn
+			border-radius: 0
+
+	.details_tabs_header
+		margin-bottom: 0
+		.livesearch_wrap
+			position: absolute
+			top: -56px
+			left: 0
+			right: 0
+			
+	.details_procedures_body
+		margin-right: -12px
+
+	.details_procedures 
+		padding-bottom: 134px
+		position: relative
+	.details_procedures_help
+		position: absolute
+		top: 100%
+		margin-top: 20px
+		background: #fff
+		left: 0
+		right: 0
+		padding: 20px 10px
+		border-radius: 4px
+		overflow: hidden
+		box-shadow: 0 1px 4px #E0E0E0
+		flex-direction: column
+		justify-content: center 
+		align-items: center
+		.btn
+			margin-top: 16px
+			max-width: 400px
+			width: 100%
+
+	.details_tabs_nav_mobile
+		box-shadow: 0 1px 4px #E0E0E0
+
++mobile
+	.details_procedures
+		>div:first-child
+			padding-top: 0
+	.details_tabs_block
+		.search_place,
+		.search_place.search_doctor,
+		.search_place.search_review
+			border-radius: 0 
+			box-shadow: none
+			border-bottom: 1px solid #E0E0E0
+			width: 100%
+			max-width: 100% !important
+			margin: 0 !important
+			padding: 12px 0
+			min-width: 0
+			&:last-child
+				border-bottom: 0
+			&:hover
+				background: #fff
+		.search_place_btn
+			display: none

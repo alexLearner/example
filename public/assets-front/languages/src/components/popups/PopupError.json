@@ -1,0 +1,22 @@
+[
+  {
+    "id": "popup.success.title",
+    "defaultMessage": "Ваша заявка отправлена!"
+  },
+  {
+    "id": "popup.success.subtitle",
+    "defaultMessage": "Вы будете перенаправлены в личный кабинет…"
+  },
+  {
+    "id": "popup.success.move",
+    "defaultMessage": "Перейти сейчас"
+  },
+  {
+    "id": "popup.success.error",
+    "defaultMessage": "Возникла какая-то ошибка!"
+  },
+  {
+    "id": "popup.success.close",
+    "defaultMessage": "Закрыть"
+  }
+]

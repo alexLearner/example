@@ -1,0 +1,22 @@
+[
+  {
+    "id": "treatment",
+    "defaultMessage": "лечение"
+  },
+  {
+    "id": "search.country_btn.look",
+    "defaultMessage": "Просмотреть"
+  },
+  {
+    "id": "search.country_btn.profile",
+    "defaultMessage": "по профилю"
+  },
+  {
+    "id": "in",
+    "defaultMessage": "в"
+  },
+  {
+    "id": "search.item.clinics",
+    "defaultMessage": "{count} {count, plural, one {клиника} few {клиник} many {клиник} other {клиники}}"
+  }
+]

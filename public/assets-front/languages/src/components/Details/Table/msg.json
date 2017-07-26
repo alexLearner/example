@@ -1,0 +1,14 @@
+[
+  {
+    "id": "details.table.more",
+    "defaultMessage": "Подробнее"
+  },
+  {
+    "id": "details.table.order",
+    "defaultMessage": "Оставить заявку"
+  },
+  {
+    "id": "details.table.cost",
+    "defaultMessage": "Цена по запросу"
+  }
+]

@@ -1,0 +1,202 @@
+.livesearch_wrap
+	.input
+		padding-top: 8px
+		padding-bottom: 8px
+
+.details_control
+	.btn
+		display: none
+		text-align: center
+		
+	&_field
+		margin-bottom: 36px
+		> p
+			margin-bottom: 12px
+		&:last-child
+			margin-bottom: 0
+		.checkbox
+			margin-top: 18px
+		.Select-control
+			height: 42px
+		.Select-placeholder,
+		.Select--single > .Select-control .Select-value
+			line-height: 38px
+		+ .checkbox
+			margin-top: -20px
+			margin-bottom: 36px
+
+	&_rating_selected.details_control_selected
+		display: inline-flex
+		
+	&_rating_bar
+		margin-top: 6px
+		height: 4px
+		position: relative
+		z-index: 1
+		&:after,
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			bottom: 0
+			top: 0
+			display: block
+		&:after
+			background: #EF8E2B
+			right: 0
+			z-index: 1
+		&:before
+			width: 1000px
+			z-index: -1
+			background: #D8D8D8
+			
+	&_rating_field
+		line-height: (24/13)
+		font-size: 13px
+		overflow: hidden
+		margin-bottom: 16px
+		&:last-child
+			margin-bottom: 0
+		&.disabled
+			p
+				color: $gray
+				pointer-events: none
+		p
+			cursor: pointer
+			&:hover
+				text-decoration: underline
+		>div
+			display: flex
+			justify-content: space-between
+
+	&_header
+		display: flex
+		margin-bottom: 20px
+		
+	&_link
+		color: $gray
+		font-size: 14px
+		cursor: pointer
+		display: none
+	
+		&:hover
+			text-decoration: underline
+
+	&_selected
+		border-radius: 4px
+		padding: 6px 16px
+		font-size: 13px
+		font-weight: bold
+		background: #fafafa
+		color: $gray
+		cursor: pointer
+		display: flex
+		align-items: center
+		+td
+		&:hover
+			background: #fafafa - #111
+			
+		&.active
+			background: $green
+			color: #fff
+			
+			&:hover
+				background: $green - #111
+				
+			.details_control_selected_close
+				opacity: 1
+				
+		&_close
+			width: 10px
+			height: 10px
+			margin-left: 12px
+			opacity: 0
+			i
+				display: flex
+			+td
+			&:before,
+			&:after
+				background: #fff
+		
+@media (min-width: $tablet)
+	.details_control_field.hidden
+		display: none
+	.details_control_overlay
+		background: transparent	
+		text-align: left
+		&:before
+			display: none
+			
++tablet
+	.details_control
+		position: relative
+		width: 100%
+		.btn
+			display: block
+		.btn_solid_gray
+			display: block
+			
+		&_header
+			display: flex
+			justify-content: space-between
+			align-items: center
+			width: 100%
+			margin-bottom: 0
+
+		&_field_rating_title
+			display: none
+
+		&_overlay
+			position: relative
+			&.active
+				.details_control_container
+					left: auto
+					opacity: 1
+					visibility: visible
+	
+		&_container
+			position: absolute
+			top: 100%
+			margin-top: 10px
+			background: #fff
+			right: -16px
+			width: 304px
+			box-shadow: 0 4px 16px rgba(0,0,0, .12), inset 0 1px 2px #E0E0E0
+			border-radius: 4px
+			padding: 30px 16px 16px
+			opacity: 0
+			z-index: 20
+			visibility: hidden
+			left: -99999px
+			text-align: right
+			> div
+				text-align: left
+			+td
+
+		&_field + .checkbox
+			margin-bottom: 28px
+			
+		&_field
+			> p
+				margin-bottom: 6px
+				
+			&:first-child
+				margin-top: 24px
+				
+			&_rating
+				display: none
+
+		&_selected
+			max-width: 220px
+	
+		&_link
+			display: inline-block
+			
+		&_container
+			.details_control_link
+				position: relative
+				top: -12px
+
+
+
+

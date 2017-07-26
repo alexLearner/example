@@ -1,0 +1,14 @@
+[
+  {
+    "id": "home.banner.find",
+    "defaultMessage": "Поиск и подбор лечения за рубежом"
+  },
+  {
+    "id": "home.banner.coord",
+    "defaultMessage": "Координируем пациентов по всему миру"
+  },
+  {
+    "id": "home.banner.change",
+    "defaultMessage": "Укажите заболевание или страну"
+  }
+]

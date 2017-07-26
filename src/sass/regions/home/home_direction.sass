@@ -1,0 +1,35 @@
+.home_direction
+	padding: 20px 29px 20px 20px
+	font-size: 14px
+.home_direction_title
+	margin-bottom: 12px
+	font-size: 16px
+.home_direction_head
+	margin-top: 12px
+	color: $gray
+	margin-bottom: 20px
+.home_direction_link_circle:after
+	content: ""
+	display: inline-block
+	vertical-align: middle
+	border-radius: 100%
+	width: 4px
+	height: 4px
+	background: currentColor
+	margin: 0 10px
+.home_direction_link
+	color: $gray
+	cursor: pointer
+	&:hover
+		text-decoration: underline
+	&.dotted:hover
+		text-decoration: none
+.home_direction_list
+	display: flex
+	align-items: flex-start
+	flex-direction: column
+	margin-bottom: 20px
+	> a
+		margin-bottom: 12px
+		&:last-child
+			margin-bottom: 0

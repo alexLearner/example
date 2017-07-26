@@ -1,0 +1,10 @@
+[
+  {
+    "id": "home.doctors.title",
+    "defaultMessage": "Ведущие доктора"
+  },
+  {
+    "id": "home.doctors.all",
+    "defaultMessage": "Смотреть всех специалистов"
+  }
+]

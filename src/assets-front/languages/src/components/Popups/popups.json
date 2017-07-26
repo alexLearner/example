@@ -1,0 +1,26 @@
+[
+  {
+    "id": "filters.all_city",
+    "defaultMessage": "По всем городам"
+  },
+  {
+    "id": "filters.all_illness",
+    "defaultMessage": "По всем болезням"
+  },
+  {
+    "id": "filters.all_direction",
+    "defaultMessage": "По всем направлениям"
+  },
+  {
+    "id": "filters.placeholder_illness",
+    "defaultMessage": "Выберите заболевание"
+  },
+  {
+    "id": "filters.placeholder_city",
+    "defaultMessage": "Выберите город"
+  },
+  {
+    "id": "filters.placeholder_direction",
+    "defaultMessage": "Выберите направление"
+  }
+]

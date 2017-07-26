@@ -1,0 +1,10 @@
+[
+  {
+    "id": "recent.show_all_history",
+    "defaultMessage": "Посмотреть всю историю"
+  },
+  {
+    "id": "recent.you_recently_viewed",
+    "defaultMessage": "Вы недавно просматривали:"
+  }
+]

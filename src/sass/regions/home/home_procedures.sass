@@ -1,0 +1,51 @@
+.section_search .home_procedures
+	margin-top: 16px
+
+.tabs
+	font-weight: 600
+	&_nav
+		overflow: hidden
+		margin-bottom: 12px
+		border-bottom: 1px solid #E0E0E0
+		&_item
+			font-size: 14px
+			list-style: none
+			display: block
+			float: left
+			height: 48px
+			padding: 14px 28px
+			position: relative
+			cursor: pointer
+			&:hover
+				color: $blue
+			&:before
+				content: ""
+				height: 3px
+				opacity: 0
+				+td
+				left: 0
+				bottom: -2px
+				right: 0
+				position: absolute
+				background: $blue
+			&.active
+				font-weight: bold
+				color: $blue
+				&:before
+					opacity: 1
+					
+	&_item
+		opacity: 0
+		position: absolute
+		height: 0
+		transition: opacity .3s
+		overflow: hidden
+		&.active
+			position: static
+			height: 100%
+			opacity: 1
+
+			
++mobile
+	.tabs_nav_item
+		padding: 14px 24px

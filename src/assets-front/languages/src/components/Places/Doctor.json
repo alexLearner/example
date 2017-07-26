@@ -1,0 +1,22 @@
+[
+  {
+    "id": "search.doctor.more",
+    "defaultMessage": "Подробнее о специалисте"
+  },
+  {
+    "id": "search.doctor.go_consultation",
+    "defaultMessage": "Записаться на консультацию"
+  },
+  {
+    "id": "search.doctor.degree",
+    "defaultMessage": "Стаж"
+  },
+  {
+    "id": "search.doctor.year",
+    "defaultMessage": "лет"
+  },
+  {
+    "id": "search.doctor.cost",
+    "defaultMessage": "Стоимость консультации"
+  }
+]

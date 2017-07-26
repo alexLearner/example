@@ -1,0 +1,22 @@
+[
+  {
+    "id": "popup.procedures",
+    "defaultMessage": "Процедуры"
+  },
+  {
+    "id": "popup.show_procedurec",
+    "defaultMessage": "Показать все процедуры"
+  },
+  {
+    "id": "popup.diagnostics",
+    "defaultMessage": "Диагностики"
+  },
+  {
+    "id": "search.procedure.cost",
+    "defaultMessage": "Цена по запросу"
+  },
+  {
+    "id": "popup.show_diagnostics",
+    "defaultMessage": "Показать все диагностики"
+  }
+]

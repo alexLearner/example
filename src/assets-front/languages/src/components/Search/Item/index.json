@@ -1,0 +1,46 @@
+[
+  {
+    "id": "search.nav.info",
+    "defaultMessage": "Описание"
+  },
+  {
+    "id": "search.nav.reviews",
+    "defaultMessage": "Отзывы"
+  },
+  {
+    "id": "search.nav.addkey",
+    "defaultMessage": "addkey"
+  },
+  {
+    "id": "search.nav.doctors",
+    "defaultMessage": "Специалисты"
+  },
+  {
+    "id": "search.nav.diagnostics",
+    "defaultMessage": "Стоимость услуг"
+  },
+  {
+    "id": "search.nav.flights",
+    "defaultMessage": "Стоимость перелёта"
+  },
+  {
+    "id": "search.nav.hotels",
+    "defaultMessage": "Отели"
+  },
+  {
+    "id": "search.nav.transfer_cost",
+    "defaultMessage": "Стоимость перелета"
+  },
+  {
+    "id": "search.nav.transfers",
+    "defaultMessage": "Перелёты"
+  },
+  {
+    "id": "search.get_cost",
+    "defaultMessage": "Получить стоимость лечения"
+  },
+  {
+    "id": "details.deals",
+    "defaultMessage": "{count} обращений"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "popup.close",
+    "defaultMessage": "Закрыть"
+  },
+  {
+    "id": "popup.send_req",
+    "defaultMessage": "Отправить запрос"
+  },
+  {
+    "id": "popup.about_procedure",
+    "defaultMessage": "Подробнее о процедуре"
+  },
+  {
+    "id": "popup.description_procedure",
+    "defaultMessage": "Описание процедуры"
+  },
+  {
+    "id": "popup.similar_procedures",
+    "defaultMessage": "Где еще проводят эту процедуру"
+  },
+  {
+    "id": "popup.price_specify",
+    "defaultMessage": "Стоимость процедуры в этой клинике уточняйте"
+  }
+]

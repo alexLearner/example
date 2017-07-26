@@ -1,0 +1,30 @@
+[
+  {
+    "id": "details.popularity_reviews",
+    "defaultMessage": "Популярные отзывы"
+  },
+  {
+    "id": "details.popularity_doctors",
+    "defaultMessage": "Ведущие доктора клиники"
+  },
+  {
+    "id": "details.reviews",
+    "defaultMessage": "{count} отзывов"
+  },
+  {
+    "id": "details.banner.rating_avg",
+    "defaultMessage": "Средняя оценка по отзывам"
+  },
+  {
+    "id": "details.banner.rating_bookimed",
+    "defaultMessage": "Независимая оценка Bookimed"
+  },
+  {
+    "id": "details.banner.show_all_reviews",
+    "defaultMessage": "Смотреть все отзывы"
+  },
+  {
+    "id": "details.banner.show_all_doctors",
+    "defaultMessage": "Смотреть всех докторов"
+  }
+]

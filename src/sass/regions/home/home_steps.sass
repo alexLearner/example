@@ -1,0 +1,82 @@
+.home_steps
+	padding: 40px 20px
+	display: flex
+	font-weight: 600
+	font-size: 14px
+	align-items: flex-start
+.home_steps_title
+	margin-bottom: 36px
+.home_steps_left
+	min-width: 500px
+	width: 500px
+.home_steps_right
+	flex: 1 auto
+	display: flex
+	justify-content: center
+.home_steps_list
+	max-width: 432px
+	margin-bottom: 34px
+.home_steps_step
+	margin-bottom: 24px
+	list-style: none
+	position: relative
+	padding-left: 44px
+	.btn
+		display: none
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		bottom: -24px
+		left: 10px
+		margin: auto
+		background: #EBEBEB
+		width: 2px
+	&:last-child:after
+		display: none
+	&.active
+		font-size: 16px
+		.home_steps_step_item:before
+			opacity: 1
+.home_steps_step_item
+	width: 24px
+	height: 24px
+	position: absolute
+	top: 0
+	left: 0
+	min-width: 24px
+	//margin-right: 20px
+	border: 2px solid #88B04B
+	border-radius: 100%
+	background: #fff
+	z-index: 1
+	&:before
+		content: ""
+		opacity: 0
+		+td
+		width: 16px
+		height: 16px
+		border-radius: 100%
+		background: #88B04B
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		top: 0
+		margin: auto
+
++tablet-sm
+	.home_steps_right
+		display: none
+	.home_steps_left
+		width: 100%
+		min-width: 0
+		max-width: 520px
+	.home_steps_step.active
+		.btn
+			display: block
+			width: 100%
+			max-width: 360px
+			margin-top: 12px
+			

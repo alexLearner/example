@@ -1,0 +1,201 @@
+#footer
+	background: #fff 
+	padding: 22px 0 0
+	border: 2px solid #ebebeb
+	color: $text
+	font-weight: 600
+	&.footer_home .block
+		max-width: 1024px
+.footer_body,
+.footer_top,
+.footer_bottom 
+	border-top: 2px solid #ebebeb
+	&:first-child
+		border-top: 0
+	.block
+		display: flex
+		justify-content: space-between
+
+.footer_rigth
+	width: (185px + 382px - 36px)
+
+.footer_body
+	padding: 22px 0 27px
+	color: #3b3b38
+	font-size: 14px
+	font-weight: 400
+	.footer_right
+		width: 50%
+	.btn
+		width: 252px
+	.link_tel
+		margin-top: 5px
+		display: inline-block
+		margin-bottom: 16px
+
+
+.footer_top 
+	padding: 40px 0
+	.nav_dropdown_list
+		width: 25% 
+		max-width: 25%
+		min-width: 25%
+		padding-right: 10px
+		margin-right: 0
+		li
+			margin-top: 0
+.footer_help
+	font-size: 13px
+	line-height: (22/13)
+	margin-bottom: 16px
+	font-weight: 600
+	max-width: 220px
+
+.footer_bottom
+	padding: 23px 0
+	font-size: 14px
+
+.footer_select_field
+	display: flex
+	align-items: center
+	font-size: 14px
+	p
+		margin-right: 24px
+	.Select
+		width: 288px !important
+
++tablet
+	.footer_select_field .Select
+		width: 217px !important
+
++mobile
+	#footer
+		padding-top: 0
+	.footer_top
+		padding: 0
+		.block
+			flex-direction: column
+	.footer_select_field p
+		margin-right: 16px
+
+	.footer_top .nav_dropdown_list
+		width: 100%
+		max-width: initial
+		min-width: initial
+	.footer_top .block
+		padding-right: 0
+		width: auto
+	.footer_body,
+	.footer_bottom 
+		.block
+			flex-direction: column
+		.footer_left
+			margin-bottom: 24px
+		.footer_right
+			width: auto
+	.footer_list
+		width: 100%
+		box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.12)
+		&:last-child
+			box-shadow: none
+		.nav_dropdown_all
+			padding-bottom: 12px
+		&:hover,
+		&.active
+			.nav_dropdown_item,
+			.nav_dropdown_all
+				display: block	
+			.triangle
+				transform: rotate(180deg)
+		.nav_dropdown_item,
+		.nav_dropdown_all
+			display: none
+		.footer_list_title
+			margin: 0
+			height: 48px
+			line-height: 48px
+			position: relative
+			cursor: pointer
+			.triangle
+				position: absolute
+				right: 16px
+				top: 0
+				bottom: 0
+				margin: auto
+				+td
+	.footer_bottom 
+		.footer_right
+			display: none
+		.footer_left
+			margin-bottom: 0
+	.footer_select_field
+		display: none
+		font-size: 12px
+		color: $gray
+		margin-bottom: 12px
+		&:last-child
+			margin-bottom: 0
+		&.mobile
+			display: flex
+		
+.footer_home
+	.block
+		padding-left: 0
+		padding-right: 0
+		
+.footer_home_top
+	margin-bottom: 44px
+	&.block
+		padding-left: 20px
+		padding-right: 20px
+.footer_top_title
+	font-size: 24px
+	font-weight: 600
+	margin-bottom: 8px
+.footer_top_subtitle
+	font-size: 20px
+	font-weight: normal
+	
+.footer_home_bottom.block
+	padding: 20px
+.footer_home_body
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	margin-bottom: 44px
+	&.block
+		padding-left: 20px
+		padding-right: 20px
+	.footer_col
+		max-width: 288px
+		display: flex
+		flex-direction: column
+		line-height: 24px
+		font-weight: normal
+		a
+			font-weight: 600
+	.btn_red
+		width: 288px
+.footer_select_field
+	span
+		cursor: pointer
+		&:hover
+			text-decoration: none
+
++mobile-sm
+	.footer_bottom
+		display: none
+	.footer_home_top
+		padding-top: 24px
+	.footer_home_body
+		flex-wrap: wrap
+		.btn
+			margin-top: 0
+		.footer_col
+			&:first-child
+				width: 100%
+				min-width: 100%
+				margin-bottom: 20px
+			&:last-child
+				margin-top: 20px
+			

@@ -1,0 +1,133 @@
+@import "../../../sass/base/core"
+
+//body
+	display: none
+
+.search_compare
+	background-color: #fafafa
+	border-radius: 8px
+	margin-top: 30px
+	padding: 24px 24px 32px
+	font-size: 14px
+	color: $text
+	font-weight: 600
+	.search_place_btn
+		margin: 0 -24px
+.search_compare_remove
+	position: absolute
+	width: 20px
+	height: 20px
+	top: 20px
+	right: 20px
+	cursor: pointer
+.search_compare_title
+	line-height: 28px
+	font-size: 18px
+	margin-bottom: 16px
+	margin-left: 16px
+	color: $text
+.search_compare_items
+	display: flex
+	align-items: flex-start
+	padding-bottom: 20px
+
+.search_compare_item
+	width: 272px
+	position: relative
+	min-width: 272px
+	background: #fff
+	border-radius: 4px
+	overflow: hidden
+	min-height: calc(100% - 17px)
+	height: calc(100% - 17px)
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05)
+	padding: 22px 24px  0
+	margin-right: 16px
+	&:last-child
+		margin-right: 0 
+.search_compare_head
+	font-size: 14px
+	margin-left: 0
+	margin-bottom: 16px
+	span
+		color: #9b9b9b
+		margin-left: 12px
+.search_compare_container
+	display: flex
+	align-items: stretch
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		right: 0
+		display: none
+		top: 0
+		bottom: 0
+		width: 40px
+		background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+		background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+		background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 )
+
+	.search_compare_items
+		flex: 1 auto 
+		align-items: stretch
+	.search_tab_nav
+		flex: 1 auto
+		min-width: 280px
+		height: calc(100% - 17px)
+		min-height: calc(100% - 17px)
+		// min-height: 
+.search_compare_field
+	padding-left: 40px
+	position: relative
+	margin-bottom: 40px
+	line-height: 2
+	> p
+		margin-bottom: 4px
+		&:last-child
+			margin-bottom: 0
+	span
+		color: $gray
+	.sprite
+		position: absolute
+		top: 7px
+		left: 0
+.search_compare_cost
+	flex-wrap: nowrap
+	display: flex
+	align-items: center 
+.search_compare_cost_item
+	list-style: none
+	margin-right: 4px
+	display: flex
+	align-items: center
+	justify-content: center
+	border-radius: 4px
+	height: 24px
+	width: 23px
+	border: 1px solid rgba(0,0,0, .2)
+	+td
+	&.active
+		border: 1px solid #77b200
+		&:before
+			@extend .sprite-dollar
+	&:before
+		content: ""
+		display: inline-block
+		@extend .sprite-dollar_disabled
+.search_compare_current
+	margin-right: 16px
+	padding-bottom: 20px
+	min-width: 272px
+.search_compare_items
+	overflow: auto
+	flex: 1 auto
+
++tablet
+	.search_compare_container:after
+		display: block
+
++mobile
+	.search_compare
+		display: none

@@ -1,0 +1,114 @@
+@mixin ib
+	display: inline-block
+	vertical-align: middle
+
+@mixin i_center
+	&:before
+		content: ""
+		display: inline-block
+		height: 100%
+		vertical-align: middle
+		width: 0
+
+@mixin link
+	color: $blue
+	text-decoration: underline
+	&:hover
+		text-decoration: none 
+
+@mixin clearfix
+	&:before, &:after
+		content: ""
+		display: block
+		width: 100%
+		clear: both
+		float: none
+
+@mixin title_medium
+	color: #000000
+	font-size: 27px
+	font-weight: 500
+
+@mixin line
+	display: block
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	margin: auto
+	width: 1px
+
+@mixin img_center
+	&:before
+		content: ""
+		+ib
+		height: 100%
+		width: 0
+	img
+		max-width: 100%
+		max-height: 100%
+		+ib
+
+@mixin align_h
+	position: absolute
+	margin: auto
+	left: 0
+	right: 0
+
+@mixin align_v
+	position: absolute
+	margin: auto
+	top: 0
+	bottom: 0
+
+@mixin align_c
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	margin: auto
+
+
+
+@mixin placeholder
+	&::-webkit-input-placeholder,
+	&::-moz-placeholder,
+	&:-moz-placeholder,
+	&:-ms-input-placeholder
+		@content
+
+@mixin td
+	transition-duration: .3s 
+
+@mixin desktop
+	@media (max-width: $desktop)
+		@content
+
+@mixin tablet
+	@media (max-width: $tablet)
+		@content
+
+@mixin tablet-sm
+	@media (max-width: $tablet-sm)
+		@content
+
+@mixin mobile
+	@media (max-width: $mobile)
+		@content
+
+@mixin mobile-sm
+	@media (max-width: $mobile-sm)
+		@content
+
+@mixin animation-down
+	overflow: hidden
+	max-height: 0
+	transition-duration: .4s
+
+@mixin triangle_bg($color, $bg)
+	.triangle
+		&:before
+			border-color: $color transparent transparent
+		&:after
+			border-color: $bg transparent  transparent

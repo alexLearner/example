@@ -1,0 +1,10 @@
+[
+  {
+    "id": "home.directions.procedures",
+    "defaultMessage": "Операции"
+  },
+  {
+    "id": "home.directions.diagnostics",
+    "defaultMessage": "Диагностики"
+  }
+]

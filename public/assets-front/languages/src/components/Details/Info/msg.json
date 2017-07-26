@@ -1,0 +1,46 @@
+[
+  {
+    "id": "details.info.popularity_procedures",
+    "defaultMessage": "Популярные процедуры"
+  },
+  {
+    "id": "details.info.description",
+    "defaultMessage": "Описание"
+  },
+  {
+    "id": "details.info.conditions",
+    "defaultMessage": "Условия размещения"
+  },
+  {
+    "id": "details.info.doctors",
+    "defaultMessage": "Специалисты клиники"
+  },
+  {
+    "id": "details.info.rate",
+    "defaultMessage": "Оценка Bookimed"
+  },
+  {
+    "id": "details.view_all_procedures",
+    "defaultMessage": "Смотреть все процедуры"
+  },
+  {
+    "id": "details.view_all_doctors",
+    "defaultMessage": "Смотреть всех специалистов"
+  },
+  {
+    "id": "details.info.accommodation",
+    "defaultMessage": "Проживание"
+  },
+  {
+    "id": "details.info.more_accommodation",
+    "defaultMessage": "Подробнее о размещении"
+  },
+  {
+    "id": "details.info.more_transfer",
+    "defaultMessage": "Подробнее о перелете"
+  },
+  {
+    "id": "details.info.transfer",
+    "defaultMessage": "Перелет"
+  }
+]

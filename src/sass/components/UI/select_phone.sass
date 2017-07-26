@@ -1,0 +1,91 @@
+.select_phone
+	//position: relative
+	//display: flex
+	//align-items: stretch
+	//width: 100%
+	//input
+	//	border-radius: 0 4px 4px 0
+	//	margin-left: -4px
+	//	color: $text
+	//	width: 165px
+	//	flex: 1 auto
+	//	z-index: 1
+	//	position: relative
+	img
+		margin-right: 8px
+		display: inline-block
+		vertical-align: middle
+		
+	&_input
+		border-radius: 0 4px 4px 0
+		margin-left: -2px
+		z-index: 1
+		
+	&_list
+		min-width: 110px
+		
+		&_head
+			@extend .input
+			border-radius: 4px 0 0 4px
+			cursor: pointer
+			width: 110px
+			min-width: 110px
+			flex: 1 auto
+			position: relative
+			img
+				max-width: 18px
+				max-height: 12px
+				margin-right: 8px
+				display: inline-block
+				vertical-align: middle
+			.triangle
+				position: absolute
+				top: 2px
+				bottom: 0
+				margin: auto
+				right: 12px
+			+triangle_bg($text, #fff)
+		
+		&_dropdown
+			background: #fff
+			font-size: 14px
+			font-weight: 600
+			z-index: 200
+			color: #575757
+			border: 2px solid #ebebeb
+			border-radius: 4px 0 0 4px
+			margin-right: -2px
+			box-shadow: 0 0 4px rgba(0,0,0, .15)
+			margin-top: 4px
+			position: absolute
+			top: 100%
+			left: 0
+			right: 0
+			opacity: 0
+			visibility: hidden
+			max-height: 0
+			overflow: hidden
+			span
+				font-size: .8em
+				color: $gray
+			&.active
+				visibility: visible
+				opacity: 1
+				max-height: 250px
+				overflow: auto
+		
+		&_item
+			cursor: pointer
+			+td
+			display: flex
+			align-items: center
+			list-style: none
+			padding: 8px 12px
+			&:hover
+				background: $bg-hover
+			img
+				max-width: 18px
+				max-height: 12px
+				margin-right: 8px
+	
+	

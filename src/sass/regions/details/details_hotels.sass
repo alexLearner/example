@@ -1,0 +1,77 @@
+.details_hotels
+	max-width: 100% 
+	position: relative
+	margin-right: -16px
+	line-height: (20/14)
+	margin-top: 20px
+	&:first-child
+		margin-top: 0
+.details_hotels_hotel
+	margin-right: 16px
+	width: calc(25% - 16px)
+
+.details_hotels_img
+	border-radius: 4px
+	overflow: hidden
+	background-size: cover
+	background-position: center
+	display: block
+	width: 100%
+	padding-bottom: 66%
+	height: 0
+	margin-bottom: 16px
+	cursor: pointer
+.details_hotels_link
+	font-size: 14px
+	margin-bottom: 4px
+	&:hover
+		text-decoration: underline
+
+.details_hotels_subtitle
+	color: $gray
+	font-size: 13px
+	margin-top: 4px
+.details_hotels_type
+	font-size: 12px
+	margin-bottom: 12px
+.details_hotels_price
+	margin-top: 12px
+	font-size: 16px
+	color: $text
+
+.details_hotels_scroll
+	>div
+		float: left
+
+.details_hotels_more
+	line-height: 20px
+	&:hover
+		text-decoration: underline
+
+.details_hotels_header
+	display: flex
+	justify-content: space-between
+	font-size: 14px
+	margin-bottom: 16px
++tablet
+	.details_hotels_scroll
+		min-width: 1000px
+	.details_hotels_container
+		max-width: 100%
+		overflow: auto
+		overflow: -moz-scrollbars-none
+		&::-webkit-scrollbar 
+			width: 0
+
+
++mobile
+	.details_accommodation_field
+		border-bottom: 1px solid #ccc
+		margin-bottom: 24px
+		padding-bottom: 22px
+		&:last-child
+			border-bottom: 0
+			margin-bottom: 0
+			padding-bottom: 0
+	.details_hotels_more
+		display: none

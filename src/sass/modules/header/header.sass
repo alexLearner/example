@@ -1,0 +1,149 @@
+@import "./header_search"
+
+#header
+	position: fixed
+	width: 100%
+	min-width: 320px
+	top: 0
+	left: 0
+	z-index: 8999
+	background: #88b04b
+	color: #fff 
+	font-weight: bold
+	font-size: 14px
+	box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08)
+	&.header_500
+		display: flex
+		align-items: center
+		min-height: 50px
+		
+	+triangle_bg(#fff, #88b04b)
+	transition-duration: .3s
+	.block
+		padding: 0 24px
+		display: flex
+		position: relative
+		align-items: center
+		justify-content: space-between
+		+td
+		+tablet-sm
+			padding: 0 16px
+	&.hide
+		transform: translateY(-100%)
+	&.header_home .block
+		max-width: 1024px
+
+
+#logo
+	margin-right: 56px
+
+#header_control
+	display: flex
+	align-items: center
+	flex: 1 auto
+	justify-content: flex-end
+	.btn
+		max-width: 250px
+
+.language
+	text-transform: uppercase
+	font-weight: bold
+	line-height: 51px
+	max-height: 51px
+	letter-spacing: -.2px
+	font-size: 14px
+	padding: 0 16px
+	color: #fff
+	margin-left: 20px
+	position: relative
+	cursor: pointer
+	+td
+	&:hover
+		background: $green - #111
+		+triangle_bg(#fff, $green - #111) 
+		.triangle
+			transform: rotate(180deg)
+		.language_dropdown	
+			visibility: visible
+			max-height: initial
+	.sprite
+		margin-right: 11px
+	.triangle
+		margin-left: 10px
+		&:before, &:after
+			+td
+	
+.language_dropdown
+	overflow: hidden
+	max-height: 0
+	visibility: hidden
+	line-height: 1.3
+	position: absolute
+	top: 100%
+	left: 0
+	right: 0
+	background: #fff
+	border-radius: 4px
+	box-shadow: 0 10px 10px rgba(0,0,0,.10)
+	// padding: 16px 0
+	li
+		display: flex 
+		align-items: center
+		list-style: none
+		padding: 12px 16px
+		+td
+		text-transform: uppercase
+		color: $black
+		cursor: pointer
+		&:hover
+			background: $bg-hover
+		i
+			margin-right: 9px
+	&.active
+		visibility: visible
+		max-height: initial
+		
+.header_control_phone
+	display: block
+	font-size: 13px
+	color: rgba(255,255,255, .6)
+	font-weight: bold
+	line-height: 23px
+	opacity: 0
+	+td
+	a
+		color: #fff
+	&.visibled
+		opacity: 1
+	> a
+		display: block
+		font-size: 16px
+	.header_control_phone_link
+		margin-left: 8px
+		display: inline
+		color: #fff
+		cursor: pointer
+		+td
+		border-bottom: 2px dotted rgba(255,255,255, .6)
+		&:hover
+			border-color: transparent
+	
+#header_control
+	.btn.btn_white
+		display: none
+
++tablet-sm
+	.language
+		display: none
+		
++mobile
+	.header_control_phone
+		display: none
+	#header_control
+		.btn
+			display: block
+
+@media (max-width: 480px)
+	#header_control > .btn 
+		display: none
+		

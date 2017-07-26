@@ -1,0 +1,22 @@
+[
+  {
+    "id": "details.nav.info",
+    "defaultMessage": "Обзор"
+  },
+  {
+    "id": "details.nav.reviews",
+    "defaultMessage": "Отзывы пациентов"
+  },
+  {
+    "id": "details.nav.doctors",
+    "defaultMessage": "Специалисты"
+  },
+  {
+    "id": "details.nav.diagnostics",
+    "defaultMessage": "Процедуры и стоимость"
+  },
+  {
+    "id": "details.nav.accommodation",
+    "defaultMessage": "Условия размещения"
+  }
+]

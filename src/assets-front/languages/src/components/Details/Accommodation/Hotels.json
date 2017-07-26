@@ -1,0 +1,14 @@
+[
+  {
+    "id": "details.hotels.day",
+    "defaultMessage": "сутки"
+  },
+  {
+    "id": "details.hotels.hotels_near",
+    "defaultMessage": "Гостиницы рядом"
+  },
+  {
+    "id": "details.hotels.show_more",
+    "defaultMessage": "Смотреть все гостиницы на Booking.com"
+  }
+]

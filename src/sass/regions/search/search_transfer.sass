@@ -1,0 +1,71 @@
+.search_transfer
+	color: $text
+	font-size: 16px
+	display: flex
+	font-weight: 600
+	flex-direction: column
+	span,
+	.search_transfer_field span
+		font-size: 13px
+		display: block
+		line-height: (16/13)
+		color: $gray
+
+.search_transfer_head
+	display: flex
+	flex-wrap: nowrap
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 16px
+	>span
+		color: $text
+		font-size: 16px
+
+.search_transfer_head_item
+	width: 110px
+	font-size: 14px
+	color: $text
+	span
+		margin-top: 4px
+	&.active
+		width: 100%
+	img
+		max-width: 18px
+		max-height: 12px
+		margin-left: 12px
+
+.search_transfer_field
+	padding: 9px 0
+	cursor: pointer
+	font-size: 14px
+	margin-right: -20px
+	line-height: (21/14)
+	border-bottom: 1px solid #ccc
+
+a.search_transfer_field
+	color: currentColor
+	&:hover
+		text-decoration: none
+
+.search_transfer_line
+	display: block
+
+.search_transfer_footer
+	margin-top: 16px
+	
+.search_transfer_title
+	margin-bottom: 16px
+	line-height: 2
+
+.search_transfer_icon
+	position: absolute
+	right: 17px
+	top: 29px
+	
+
++mobile
+	.search_transfer_field
+		flex-direction: column
+		align-items: flex-start
+	.search_transfer_head
+		flex-direction: column

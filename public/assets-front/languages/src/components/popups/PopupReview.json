@@ -1,0 +1,10 @@
+[
+  {
+    "id": "popup.next_review",
+    "defaultMessage": "Следующий отзыв"
+  },
+  {
+    "id": "popup.prev_review",
+    "defaultMessage": "Предыдущий отзыв"
+  }
+]

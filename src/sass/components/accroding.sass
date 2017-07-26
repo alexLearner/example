@@ -1,0 +1,113 @@
+.according_list
+	display: flex
+	justify-content: space-between
+	margin: 24px -24px 0
+	border-bottom: 1px solid #ebebeb
+	padding: 0 24px
+	.according_list_item
+		display: initial
+.according_list_item
+	padding: 0 12px 12px
+	border-bottom: 3px solid transparent
+	margin-bottom: -1px
+	color: $text
+	font-size: 14px
+	font-weight: 600
+	display: none
+	cursor: pointer
+	&.disabled
+		color: $gray !important
+		pointer-events: none !important
+		tab-index: -1
+		.triangle
+			display: none !important
+	.triangle
+		display: none
+	+td
+	span
+		color: $gray
+		margin-left: 10px
+	&:hover
+		color: $blue
+	&.active
+		color: $blue
+		border-color: currentColor
+.according_tabs
+	background-color: #fcfcfc
+	padding: 24px 24px
+	margin: 0 -24px
+.according_tab
+	display: none
+	> div
+		max-height: 0
+		overflow: hidden
+		opacity: 0
+		visibility: hidden
+		+td
+	&.active
+		display: block
+	&.active > div
+		visibility: visible
+		opacity: 1
+		overflow: visible
+		max-height: initial
+	.home_clinic
+		margin-top: 20px
+		display: block
+		overflow: hidden
+		&:first-child
+			margin-top: 0
+		+mobile
+			&:first-child
+				margin-top: 20px
+
++mobile-sm
+	.according
+		.according_tab
+			display: block
+			> *
+				display: none
+			> .according_list_item
+				display: block
+			&.active > *
+				display: block
+	.according_list
+		display: none
+	.according_list_item + .block_content
+		margin-top: 0
+	.according_list_item .popup_other
+		padding-top: 0
+	.according_list_item
+		display: block
+		padding: 12px 16px 12px 0
+		margin-right: -16px
+		border-bottom: 1px solid #ebebeb
+		position: relative
+		.triangle
+			display: block
+			position: absolute
+			right: 16px
+			+td
+			top: 0
+			bottom: 0
+			margin: auto
+		&.active
+			color: $text
+			border-color: #ebebeb
+			margin-bottom: 20px
+			.triangle
+				transform: rotate(180deg)
+	.according_tabs
+		margin: 0 -16px
+		padding: 16px
+		background: #fff
+		.search_review
+			min-width: initial
+			margin-bottom: 0
+			margin-top: 16px
+			margin-right: 0
+		.search_doctor
+			margin-right: 0
+	.according_tab.active
+		padding-bottom: 16px
+

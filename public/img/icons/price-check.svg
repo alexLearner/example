@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>price-check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="price-check">
+            <g id="Group-4" transform="translate(0.000000, 2.000000)">
+                <path d="M16.5,14 C12.9101491,14 10,16.9101491 10,20.5 C10,24.0898509 12.9101491,27 16.5,27 C20.0898509,27 23,24.0898509 23,20.5 C22.9930669,16.9130248 20.0869752,14.0069331 16.5,14 L16.5,14 Z M16.59,22.86 L16.22,23.21 L13.21,20.22 L13.94,19.49 L16.22,21.77 L19.5,18.49 L20.23,19.22 L16.59,22.86 Z" id="Shape"></path>
+                <rect id="Rectangle-path" fill="#4A4A4A" x="8" y="11" width="6" height="1"></rect>
+                <rect id="Rectangle-path" fill="#4A4A4A" x="8" y="0" width="1" height="3"></rect>
+                <rect id="Rectangle-path" fill="#4A4A4A" x="8" y="7" width="6" height="1"></rect>
+                <polygon id="Shape" fill="#4A4A4A" points="9.91 15.01 8 15 8 16 9.25 16.01"></polygon>
+                <rect id="Rectangle-path" fill="#4A4A4A" x="4" y="7" width="1" height="1"></rect>
+                <rect id="Rectangle-path" fill="#4A4A4A" x="4" y="15" width="1" height="1"></rect>
+                <polygon id="Shape" fill="#4A4A4A" points="16.22 21.77 13.94 19.49 13.21 20.22 16.22 23.21 16.59 22.86 20.23 19.22 19.5 18.49"></polygon>
+                <rect id="Rectangle-path" fill="#4A4A4A" x="4" y="11" width="1" height="1"></rect>
+                <path d="M17.44,13.06 L17,13 L17,2 L11,2 L11,3 L16,3 L16,13 L15.56,13.06 C14.3695384,13.2197205 13.2345922,13.6620409 12.25,14.35 L10.8,15.63 C9.6395407,16.9873829 9.00129941,18.7141802 9,20.5 C8.9997524,20.814298 9.01979407,21.1282842 9.06,21.44 L9.13,22 L1,22 L1,3 L6,3 L6,2 L0,2 L0,23 L9.43,23 L9.56,23.31 C10.9305781,26.6926383 14.5386804,28.5960144 18.1044237,27.8174253 C21.670167,27.0388362 24.1564865,23.8047277 23.9923298,20.1586642 C23.828173,16.5126008 21.0612835,13.5150075 17.44,13.06 L17.44,13.06 Z M16.5,27 C12.9101491,27 10,24.0898509 10,20.5 C10,16.9101491 12.9101491,14 16.5,14 C20.0898509,14 23,16.9101491 23,20.5 C22.9930669,24.0869752 20.0869752,26.9930669 16.5,27 Z" id="Shape" fill="#4A4A4A"></path>
+            </g>
+        </g>
+    </g>
+</svg>

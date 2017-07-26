@@ -1,0 +1,10 @@
+[
+  {
+    "id": "home.countries.clinics",
+    "defaultMessage": "{count} клиник"
+  },
+  {
+    "id": "home.countries.reviews",
+    "defaultMessage": "{count} отзыва о лечении"
+  }
+]

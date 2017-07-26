@@ -1,0 +1,86 @@
+[
+  {
+    "id": "popup.close",
+    "defaultMessage": "Закрыть"
+  },
+  {
+    "id": "popup.callback.callback_doctor_title",
+    "defaultMessage": "Опишите цель обращения в специалисту"
+  },
+  {
+    "id": "popup.callback.we_ring_to_you",
+    "defaultMessage": "Врач-координатор перезвонит Вам и ответит на все вопросы"
+  },
+  {
+    "id": "popup.callback.order_ring",
+    "defaultMessage": "Заказать звонок"
+  },
+  {
+    "id": "popup.callback.we_build_program",
+    "defaultMessage": "Получите индивидуальную программу лечения"
+  },
+  {
+    "id": "popup.callback.read_about_target",
+    "defaultMessage": "Опишите проблему как можно детальнее"
+  },
+  {
+    "id": "popup.callback.placeholder_textarea",
+    "defaultMessage": "Например: Какая стоимость лечения рака молочной железы на 4 стадии в мед. центре им. Сураски (Ихилов)?"
+  },
+  {
+    "id": "popup.callback.default_placeholder_textarea",
+    "defaultMessage": "Расскажите о Вашей проблеме чтобы мы подобрали лучшего специалиста"
+  },
+  {
+    "id": "popup.callback.your_phone",
+    "defaultMessage": "Ваш номер телефона"
+  },
+  {
+    "id": "popup.callback.doctor_ring_about_time",
+    "defaultMessage": "Врач-координатор Bookimed перезвонит в течение часа."
+  },
+  {
+    "id": "popup.callback.email",
+    "defaultMessage": "Адрес электронной почты"
+  },
+  {
+    "id": "popup.callback.text_send_on_email",
+    "defaultMessage": "Сюда мы вышлем программу лечения после консилиума врачей (2-3 дня)."
+  },
+  {
+    "id": "popup.callback.bookimed_check_cost",
+    "defaultMessage": "Bookimed проверяет все цены клиник."
+  },
+  {
+    "id": "popup.callback.bookimed_check_your",
+    "defaultMessage": "Мы следим за тем, чтобы Вы не переплачивали."
+  },
+  {
+    "id": "popup.callback.get_cost",
+    "defaultMessage": "Получить стоимость лечения"
+  },
+  {
+    "id": "popup.callback.our_phone",
+    "defaultMessage": "Наш телефон:"
+  },
+  {
+    "id": "popup.callback.validate_text",
+    "defaultMessage": "* Все поля обязательны для заполнения"
+  },
+  {
+    "id": "popup.callback.text_1",
+    "defaultMessage": "Врач-координатор свяжется с Вами в течение 1 часа"
+  },
+  {
+    "id": "popup.callback.text_2",
+    "defaultMessage": "Мы проверяем все цены клиник и следим, чтобы Вы не переплачивали"
+  },
+  {
+    "id": "popup.callback.text_3",
+    "defaultMessage": "Составление программы лечения и расчет стоимости бесплатные"
+  },
+  {
+    "id": "popup.callback.text_4",
+    "defaultMessage": "Программа лечения составляется на консилиуме врачей клиники"
+  }
+]

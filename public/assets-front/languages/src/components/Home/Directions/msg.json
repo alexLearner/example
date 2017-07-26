@@ -1,0 +1,22 @@
+[
+  {
+    "id": "home.directions.procedures",
+    "defaultMessage": "Процедуры"
+  },
+  {
+    "id": "home.directions.articles",
+    "defaultMessage": "Статьи"
+  },
+  {
+    "id": "home.directions.choose_illness",
+    "defaultMessage": "Выбрать заболевание из списка"
+  },
+  {
+    "id": "home.directions.base_directions",
+    "defaultMessage": "Основные направления лечения за границей"
+  },
+  {
+    "id": "home.directions.all_directions",
+    "defaultMessage": "Все направления"
+  }
+]

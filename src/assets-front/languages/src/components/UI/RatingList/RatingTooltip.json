@@ -1,0 +1,14 @@
+[
+  {
+    "id": "rating.tooltip.title",
+    "defaultMessage": "Оценка пациентов"
+  },
+  {
+    "id": "rating.tooltip.show_all",
+    "defaultMessage": "Смотреть все отзывы ({count})"
+  },
+  {
+    "id": "details.reviews",
+    "defaultMessage": "отзывов"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "search.content.popularity_dir_treatment",
+    "defaultMessage": "Популярные методы лечения и диагностики {name}"
+  },
+  {
+    "id": "search.content.also_search_in_country",
+    "defaultMessage": "Пациенты также ищут лечение {name} в странах:"
+  },
+  {
+    "id": "search.content.search",
+    "defaultMessage": "Чаще всего ищут:"
+  },
+  {
+    "id": "search.content.lead_with",
+    "defaultMessage": "{name} проводят при:"
+  },
+  {
+    "id": "search.content.choose_clinic_by_city",
+    "defaultMessage": "Выбирайте клиники {name} по городам:"
+  },
+  {
+    "id": "search.content.aslo_search_in",
+    "defaultMessage": "Чаще всего в {name} ищут:"
+  },
+  {
+    "id": "search.content.popularity_dir",
+    "defaultMessage": "Популярные медицинские направления {name}:"
+  }
+]

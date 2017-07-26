@@ -1,0 +1,26 @@
+[
+  {
+    "id": "details.control.filter",
+    "defaultMessage": "Фильтр"
+  },
+  {
+    "id": "details.control.reset",
+    "defaultMessage": "Сбросить"
+  },
+  {
+    "id": "details.control.avrg_rating",
+    "defaultMessage": "Средняя оценка по 12 отзывам пациентов"
+  },
+  {
+    "id": "details.control.filter_by_rating",
+    "defaultMessage": "Фильтровать по рейтингу"
+  },
+  {
+    "id": "details.control.sort",
+    "defaultMessage": "Сортировать"
+  },
+  {
+    "id": "details.control.enter",
+    "defaultMessage": "Применить"
+  }
+]

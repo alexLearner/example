@@ -1,0 +1,84 @@
+.articles
+	background: #fff
+	padding: 24px 0 20px
+	font-size: 16px
+	font-weight: 600
+	margin: 40px auto
+	box-shadow: 1px 2px 4px rgba(0,0,0, .12)
+	border-radius: 4px
+	&.preloader
+		min-height: 200px
+
+.articles_title
+	color: $text
+.articles_body
+	overflow: auto
+	padding: 0 0 16px
+	+tablet
+		margin: 0 -16px
+		padding: 0 16px 16px
+.articles_scroll
+	justify-content: space-between
+	display: flex
+	flex-wrap: nowrap
+	>div
+		width: 25%
+		min-width: 264px
+		padding: 0 12px
+		&:first-child
+			padding-left: 0
+		&:last-child
+			padding-right: 0
+.articles_header
+	margin-bottom: 40px
+	overflow: hidden
+	a
+		float: right
+		&:hover
+			text-decoration: underline
+.articles_footer
+	display: none
+.articles_item
+	min-width: 240px
+	display: block
+	height: 100%
+	border-radius: 4px
+	overflow: hidden
+	box-shadow: 1px 2px 4px rgba(0,0,0, .12)
+	+td
+	&:hover
+		box-shadow: 1px 2px 4px rgba(0,0,0, .4)
+	+tablet
+		width: 240px
+
+.articles_item_content
+	padding: 20px 20px 12px
+	> p
+		margin-bottom: 8px
+
+.articles_item_img
+	display: block
+	width: 100%
+	height: 162px
+	object-fit: cover
+.articles_item_footer
+	color: $red
+	font-size: 14px
+	margin-top: 40px
+	&:empty
+		display: none
+
++tablet
+	.articles_scroll > div:last-child
+		padding-right: 12px
+
++tablet-sm
+	.articles_footer
+		display: block
+		margin: 20px -20px -20px
+	.articles_header .link
+		display: none
+		
++mobile
+	.articles 
+		margin: 40px -16px

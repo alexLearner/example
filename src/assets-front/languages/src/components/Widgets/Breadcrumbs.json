@@ -1,0 +1,30 @@
+[
+  {
+    "id": "breadcrumbs.back",
+    "defaultMessage": "Вернуться к клиникам по запросу"
+  },
+  {
+    "id": "breadcrumbs.treatment_in",
+    "defaultMessage": "Лечение в {name}"
+  },
+  {
+    "id": "filters.clinics",
+    "defaultMessage": "24 клиники"
+  },
+  {
+    "id": "filters.no_clinics",
+    "defaultMessage": "Нет клиник"
+  },
+  {
+    "id": "filters.main",
+    "defaultMessage": "Главная"
+  },
+  {
+    "id": "breadcrumbs.main",
+    "defaultMessage": "Вернуться на главную"
+  },
+  {
+    "id": "breadcrumbs.back_main",
+    "defaultMessage": "Вернуться к поиску"
+  }
+]

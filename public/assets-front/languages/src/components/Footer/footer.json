@@ -1,0 +1,114 @@
+[
+  {
+    "id": "footer.about",
+    "defaultMessage": "О проекте"
+  },
+  {
+    "id": "footer.who",
+    "defaultMessage": "Кто такие Bookimed"
+  },
+  {
+    "id": "footer.mail",
+    "defaultMessage": "Электронная почта"
+  },
+  {
+    "id": "footer.coordinators",
+    "defaultMessage": "Координаторы"
+  },
+  {
+    "id": "footer.cost",
+    "defaultMessage": "Стоимость услуг Bookimed"
+  },
+  {
+    "id": "footer.add_clinic",
+    "defaultMessage": "Добавить свою клинику"
+  },
+  {
+    "id": "footer.specialisation",
+    "defaultMessage": "Специализации"
+  },
+  {
+    "id": "footer.all_spec",
+    "defaultMessage": "Все специализации"
+  },
+  {
+    "id": "footer.countries",
+    "defaultMessage": "Страны"
+  },
+  {
+    "id": "footer.all_countries",
+    "defaultMessage": "Все страны"
+  },
+  {
+    "id": "footer.useful",
+    "defaultMessage": "Полезное"
+  },
+  {
+    "id": "footer.how_choose",
+    "defaultMessage": "Как выбрать клинику"
+  },
+  {
+    "id": "footer.contacts",
+    "defaultMessage": "Контакты"
+  },
+  {
+    "id": "footer.preparation",
+    "defaultMessage": "Подготовка к поездке"
+  },
+  {
+    "id": "footer.cost_for_help",
+    "defaultMessage": "Цены и оплата за лечение"
+  },
+  {
+    "id": "footer.go_to_ask",
+    "defaultMessage": "Задать вопрос"
+  },
+  {
+    "id": "footer.write",
+    "defaultMessage": "Если у вас возникли вопросы, позвоните или напишите нам:"
+  },
+  {
+    "id": "footer.please_contact",
+    "defaultMessage": "Свяжитесь с нами любым удобным способом:"
+  },
+  {
+    "id": "footer.line",
+    "defaultMessage": "Гарячая линия поддержки"
+  },
+  {
+    "id": "footer.callback",
+    "defaultMessage": "Заказать звонок"
+  },
+  {
+    "id": "footer.location",
+    "defaultMessage": "Местоположение"
+  },
+  {
+    "id": "footer.lang",
+    "defaultMessage": "Язык"
+  },
+  {
+    "id": "footer.is_ask",
+    "defaultMessage": "Возникли вопросы?"
+  },
+  {
+    "id": "header.lists.faq",
+    "defaultMessage": "Часто задаваемые вопросы"
+  },
+  {
+    "id": "header.lists.rating",
+    "defaultMessage": "Рейтинг инновационных клиник мира"
+  },
+  {
+    "id": "header.lists.money",
+    "defaultMessage": "10 способов собрать деньги на лечение"
+  },
+  {
+    "id": "header.lists.title_treatment",
+    "defaultMessage": "Лечение за рубежом"
+  },
+  {
+    "id": "header.lists.about",
+    "defaultMessage": "О проекте"
+  }
+]

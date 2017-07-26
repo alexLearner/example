@@ -1,0 +1,79 @@
+//
+// Select Menu
+// ------------------------------
+
+
+// wrapper around the menu
+
+.Select-menu-outer {
+	background-color: $select-input-bg;
+	border: 2px solid $select-input-border-color;
+	border-radius: $select-input-border-radius;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	margin-top: 8px;
+	left: 0;
+	right: 0;
+	max-height: $select-menu-max-height;
+	position: absolute;
+	top: 100%;
+	// width: 100%;
+	z-index: $select-menu-zindex;
+	-webkit-overflow-scrolling: touch;
+}
+
+.select_bottom .Select-menu-outer {
+	top: auto; 
+	bottom: 100%;
+	margin-bottom: 8px;
+}
+
+// wrapper
+
+.Select-menu {
+	max-height: ($select-menu-max-height - 2px);
+	overflow-y: auto;
+}
+
+
+// options
+
+.Select-option {
+	box-sizing: border-box;
+	background-color: $select-option-bg;
+	color: $select-option-color;
+	cursor: pointer;
+	display: block;
+	padding: 8px $select-padding-horizontal;
+	&:last-child {
+		// @include border-bottom-radius( $select-input-border-radius );
+		border-bottom: 0;
+	}
+
+	&.is-selected {
+		background-color: $select-option-selected-bg;
+		color: $select-option-selected-color;
+	}
+
+	&.is-focused {
+		background-color: $select-option-focused-bg;
+		color: $select-option-focused-color;
+	}
+
+	&.is-disabled {
+		color: $select-option-disabled-color;
+		cursor: default;
+	}
+
+}
+
+
+// no results
+
+.Select-noresults {
+	box-sizing: border-box;
+	color: $select-noresults-color;
+	cursor: default;
+	display: block;
+	padding: $select-padding-vertical $select-padding-horizontal;
+}

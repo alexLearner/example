@@ -1,0 +1,14 @@
+[
+  {
+    "id": "search.reviews.video",
+    "defaultMessage": "Видео-отзыв"
+  },
+  {
+    "id": "search.reviews.photo",
+    "defaultMessage": "Фото-отзыв"
+  },
+  {
+    "id": "search.reviews.read_all_review",
+    "defaultMessage": "Читать весь отзыв"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "yes",
+    "defaultMessage": "Да"
+  },
+  {
+    "id": "no",
+    "defaultMessage": "Нет"
+  }
+]

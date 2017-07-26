@@ -1,0 +1,102 @@
+[
+  {
+    "id": "filters.you_look",
+    "defaultMessage": "Вы просматриваете"
+  },
+  {
+    "id": "input_placeholder_treatment",
+    "defaultMessage": "введите название болезни или направления"
+  },
+  {
+    "id": "input_placeholder_diagnostic",
+    "defaultMessage": "введите название диагностики"
+  },
+  {
+    "id": "input_placeholder_operation",
+    "defaultMessage": "введите название процедуры"
+  },
+  {
+    "id": "input_placeholder_filters_countries",
+    "defaultMessage": "введите название города или страну"
+  },
+  {
+    "id": "filters.placeholder",
+    "defaultMessage": "введите название города или страну"
+  },
+  {
+    "id": "filters.clinics",
+    "defaultMessage": "24 клиники"
+  },
+  {
+    "id": "in",
+    "defaultMessage": "в"
+  },
+  {
+    "id": "at",
+    "defaultMessage": "по"
+  },
+  {
+    "id": "direction",
+    "defaultMessage": "направлению"
+  },
+  {
+    "id": "search.noresult",
+    "defaultMessage": "Ничего не найдейно"
+  },
+  {
+    "id": "filters.diagnostic",
+    "defaultMessage": "диагностику"
+  },
+  {
+    "id": "filters.procedure",
+    "defaultMessage": "процедуру"
+  },
+  {
+    "id": "filters.vector",
+    "defaultMessage": "лечение любого заболевания"
+  },
+  {
+    "id": "filters.vector_country",
+    "defaultMessage": "любой стране"
+  },
+  {
+    "id": "filters.filter",
+    "defaultMessage": "Фильтр"
+  },
+  {
+    "id": "filters.reset",
+    "defaultMessage": "Сбросить"
+  },
+  {
+    "id": "filters.treatment",
+    "defaultMessage": "лечение"
+  },
+  {
+    "id": "filters.i_find",
+    "defaultMessage": "Я ищу"
+  },
+  {
+    "id": "filters.treatment_footer",
+    "defaultMessage": "Не нашли нужное заболевание?"
+  },
+  {
+    "id": "filters.procedures_footer",
+    "defaultMessage": "Не нашли нужную процедуру?"
+  },
+  {
+    "id": "filters.country_footer",
+    "defaultMessage": "Не нашли нужную страну?"
+  },
+  {
+    "id": "filters.ask_doctor",
+    "defaultMessage": "Задать вопрос специалисту"
+  },
+  {
+    "id": "filters.illness",
+    "defaultMessage": "Заболевание"
+  },
+  {
+    "id": "filters.nav_procedure",
+    "defaultMessage": "Процедуру"
+  }
+]

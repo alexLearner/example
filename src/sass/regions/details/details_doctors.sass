@@ -1,0 +1,23 @@
+.details_doctors_body
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	.search_place
+		max-width: calc(50% - 8px)
+		min-width: calc(50% - 8px)
+		max-width: calc(50% - 8px)
+		flex: 1
+		margin-right: 0 !important
+		margin-bottom: 12px
+		&:nth-child(2n)
+			margin-right: 0
+
++mobile
+	.details_doctors_body
+		flex-direction: column
+		.search_place
+			width: 100%
+			max-width: 100
+
+	.details_tabs_footer
+		margin-top: 0

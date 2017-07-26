@@ -1,0 +1,18 @@
+[
+  {
+    "id": "popup.close",
+    "defaultMessage": "Закрыть"
+  },
+  {
+    "id": "popup.send_req",
+    "defaultMessage": "Отправить запрос"
+  },
+  {
+    "id": "popup.about_procedure",
+    "defaultMessage": "Подробнее о процедуре"
+  },
+  {
+    "id": "popup.load_more_diagnostic",
+    "defaultMessage": "Загрузить еще 5 диагностик"
+  }
+]

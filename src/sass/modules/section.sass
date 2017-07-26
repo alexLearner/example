@@ -1,0 +1,56 @@
+.section
+	background: #fff
+	max-width: 1024px
+	border-radius: 8px
+	box-shadow: 1px 2px 4px rgba(0,0,0, .12)
+	margin: 20px auto
+	padding: 20px
+	&:empty
+		display: none
+	&.section_search
+		max-width: 1360px
+.section_header,
+.section .scroll-slider_header
+	margin-bottom: 20px
+	display: flex
+	justify-content: space-between
+	.link
+		font-size: 14px
+.section_title,
+.section .scroll-slider_title
+	color: $text
+	font-size: 24px
+	font-weight: 600
+	line-height: (40/24)
+	max-width: 53rem
+.section_footer,
+.scroll-slider_footer
+	display: none
+	
++tablet-sm
+	.section_header .link,
+	.section .scroll-slider_header .link
+		display: none
+	.section_footer,
+	.scroll-slider_footer
+		display: block
+		margin: 0 -20px -20px
+		.btn
+			margin-top: 0
+		
+
+@media (max-width: 1060px)
+	.section
+		margin: 20px 24px
+		&.section_search
+			margin: 20px 0
+
+@media (max-width: 680px)
+	.section
+		margin: 20px 16px
+		
+@media (max-width: 520px)
+	.section
+		margin: 20px 0
+		border-radius: 0
+		

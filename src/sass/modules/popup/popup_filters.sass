@@ -1,0 +1,92 @@
+.filters
+	.block
+		display: flex
+
+.popup_filters
+	max-width: 320px
+	background: #fff
+	color: $text
+	font-size: 13px 
+	font-weight: 600
+	line-height: 21px
+	box-shadow: 0 0 30px rgba(0,0,0, .5)
+	.btn
+		width: 100%
+	.popup_container
+		margin-bottom: 0
+		
+.popup_filters_head
+	position: relative
+	padding-right: 80px
+	margin-bottom: 20px
+			
+.popup_filters_input
+	border: 0
+	background: transparent
+	color: $text
+	font-weight: 600
+	font-size: 13px
+	+placeholder
+		font-size: 13px
+		font-weight: 600
+		color: $text
+
+.popup_filters_head_input
+	margin-bottom: 16px
+.popup_country_list
+	border-top: 1px solid #ebebeb
+	margin: 0 -24px 
+	padding-left: 20px
+	min-height: 400px
+	max-height: 400px
+	overflow: auto
+	+td
+.popup_country_item
+	line-height: 28px
+	font-size: 14px
+	color: #575757
+	padding: 12px 0 12px 20px
+	margin-left: -20px
+	display: flex
+	align-items: center
+	cursor: pointer
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		bottom: 0
+		left: 20px
+		background: #ebebeb
+		height: 1px
+		+td
+		right: 0
+		z-index: 1
+	&:hover,
+	&.focus
+		background: $bg-hover
+		&:after
+			background: $bg-hover
+	span
+		color: $gray
+		font-weight: 600
+		font-size: 13px
+		margin-left: 8px
+	&:last-child
+		border-bottom: 0
+.popup_country_item_img
+	margin-right: 16px 
+	max-width: 36px
+.popup_footer
+	padding-bottom: 20px
+	margin: 0
+
++mobile-sm
+	.popup_country_list
+		margin: 0 -16px
+		padding-left: 16px
+	.popup_country_item
+		margin-left: -16px
+	.popup_filters_footer
+		margin: 0 -16px
+	.popup_footer
+		margin: 24px 0 0

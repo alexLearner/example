@@ -1,0 +1,421 @@
+.content_old
+	a
+		color: $blue
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	p
+		margin-bottom: 15px
+		line-height: 1.3
+		margin-top: 15px
+		&:last-child
+			margin-bottom: 0
+		&:first-child
+			margin-top: 0
+	table
+		margin: 1em 0
+		border-spacing: 0
+		border-collapse: collapse
+
+.search_banner
+	.block-green,
+	.block-yellow
+		border: 0
+		padding: 0
+		background: transparent
+		width: 100%
+		margin: 1.2em 0 .8em
+		
+.clinic-header-top
+	overflow: hidden
+	border-radius: 4px
+	margin-bottom: 28px
+	background: #fff
+	box-shadow: 1px 2px 4px rgba(0,0,0, .08)
+	padding: 20px
+	.max_video_content,
+	> .block-green,
+	> .block-yellow,
+	> div
+		background: transparent !important
+		padding: 20px !important
+		margin: -20px !important
+	> table
+		margin: -20px 0
+		
+	h2, h1, h3, h4, h5, h6
+		color: $text
+		margin: 1em 0
+		line-height: 1.3
+		&:first-child
+			margin-top: 0
+	ul
+		list-style: disc
+		margin-left: 20px
+		line-height: 1.3
+		font-size: 14px
+	ol
+		list-style: decimal
+		margin-left: 20px
+		line-height: 1.3
+		font-size: 14px
+	td
+		margin-left: 20px
+		line-height: 1.3
+		font-size: 14px
+
+.clinics-country-add-info .head
+	display: inline-table
+	width: 49.8%
+
+.clinic-header-top .clinics-country-add-info .head .ul-container
+	border: 1px solid #DFDFDF
+	border-radius: 5px
+	margin: 0 0 5px 0
+	padding: 5px 10px 0 10px
+	background-color: #EAFFC0
+	width: 90%
+		
+.block-green,
+.block-yellow
+	border: 1px solid #DFDFDF
+	border-radius: 5px
+	margin: 0px 0px 15px
+	padding: 5px 10px 5px 20px
+	
+.block-green
+	background-color: #EAFFC0
+	border-color: #DFDFDF
+	&:empty
+		display: none
+.block-yellow
+	background-color: #FFFFA9
+	border-color: #FFF775
+	
+.block-green-frame
+	padding: 10px
+	border-radius: 5px
+	margin: 10px 0px 15px
+	border: 2px solid #84AF00
+	td
+		border: 2px solid #84AF00
+		padding: 2px 5px
+
+.block-yellow-frame
+	padding: 10px
+	border-radius: 5px
+	margin: 10px 0px 15px
+	border: 2px solid #FFF775
+	td
+		border: 2px solid #FFF775
+		padding: 2px 5px
+		
+		
+
+.max_video_content
+	background: #FFFFA9
+	padding: 15px
+	display: flex
+	align-items: flex-start
+
+.max_video_content_left
+	border: 5px solid #fff
+	border-radius: 5px
+	margin-right: 20px
+	margin-bottom: 0
+	img
+		min-width: 200px
+	iframe
+		vertical-align: bottom
+	a
+		display: inline-block
+		float: left
+		position: relative
+		&:before
+			background: url(//ru.bookimed.com/frontend/img/icons/play-video.png)
+			content: ""
+			height: 128px
+			left: 0
+			margin: 0 auto
+			opacity: 0.6
+			position: absolute
+			right: 0
+			top: calc(50% - 64px)
+			width: 128px
+			z-index: 2
+		&:hover:before
+			opacity: 1
+		img
+			display: block
+			height: auto
+			max-width: 200px
+			z-index: 1
+
+.max_video_content_right
+	margin-right: 20px
+	h5
+		color: #000
+		font-size: 16px
+		font-weight: bold
+		margin: 0 0 10px
+	ul
+		padding-left: 15px
+		margin-left: 0
+		margin-bottom: 10px
+		&.list-style-none
+			padding-left: 0
+			list-style: none
+		
+		li
+			margin-bottom: 3px
+			a
+				color: #fd7b64
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+
+.max_video_content_button
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	margin-left: auto
+	> a
+		background-image: linear-gradient(90deg, rgb(79, 129, 189) 0%, rgb(93, 152, 223) 99%)
+		border-radius: 5px
+		border: 1px solid rgb(79, 129, 189)
+		color: #fff
+		display: inline-block
+		margin-top: 0
+		padding: 8px 40px 14px 15px
+		position: relative
+		text-align: left
+		text-decoration: none
+		white-space: normal
+		width: 270px
+		&:hover
+			background: #396ca8
+		
+		p
+			display: block
+			font-size: 16px
+			margin-bottom: 5px
+			font-weight: bold
+		
+		span
+			display: block
+			font-size: 11px
+			line-height: 1.1
+			font-weight: normal
+		
+		img
+			position: absolute
+			right: 10px
+			top: calc(50% - 20px)
+			font-size: 40px
+	
+	ul
+		padding: 0
+		margin: 5px 0 0 0
+		li
+			list-style: none
+			margin-bottom: 3px
+			a
+				color: #1E579C
+	
+.td-hover
+	+td
+.td-hover:hover
+	opacity: 0.8
+
+.clinick-list-wrap-table
+	display: flex
+	margin-bottom: 0
+	
+.with-border td
+	border: 1px solid #494949
+	padding: 2px 4px
+
++mobile
+	.clinick-list-wrap-table
+		flex-direction: column
+	.max_video_content
+		flex-direction: column
+		align-items: center
+	.max_video_content_left
+		margin-top: 20px
+		order: 2
+		margin-right: 0
+		a
+			float: none
+			display: block
+			
+			
+.col-main
+	>div
+		max-width: 100%
+		overflow: auto
+
+.cl-sh-btn
+	color: $blue
+	cursor: pointer
+	&:hover
+		text-decoration: underline
+		
+
+// BASED ON typebase.css http://devinhunt.github.io/typebase.css/
+
+.content
+	font-weight: 400
+	line-height: 1.45
+	color: #333
+	b, strong
+		font-weight: 600
+	p
+		line-height: 1.5rem
+		margin-top: 1.414rem
+		margin-bottom: 0
+		&:first-child
+			margin-top: 0
+		img
+			//margin-left: 20px
+			margin-top: 20px
+			margin-bottom: 20px
+			&:last-child
+				margin-bottom: 0
+			&:first-child
+				margin-top: 0
+	
+	p, span, ul, ol
+		max-width: 52em
+	a
+		color: $blue
+		&:hover
+			text-decoration: underline
+	ul,
+	ol
+		margin-top: 1.5rem
+		margin-bottom: 1.5rem
+		margin-left: 20px
+		&:last-child
+			margin-bottom: 0
+	
+	ul li,
+	ol li
+		line-height: 1.5rem
+		// margin: .4rem 0
+		margin: 0.875em 0
+		max-width: 36em
+		&:first-child
+			margin-top: 0
+		&:last-child
+			margin-bottom: 0
+	
+	ul ul,
+	ol ul,
+	ul ol,
+	ol ol
+		margin-top: 0
+		margin-bottom: 0
+	
+	blockquote
+		line-height: 1.5rem
+		margin-top: 1.5rem
+		margin-bottom: 1.5rem
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	caption
+		margin: 1.5em 0 0.5em
+		font-weight: 400
+		color: $text
+		line-height: 1.2
+		text-align: left !important
+		letter-spacing: -0.01414em
+		&:first-child
+			margin-top: 0
+	h1
+		font-size: 2.5rem
+	h2
+		font-size: 2.2rem
+	h3
+		font-size: 1.414rem
+	h4
+		font-size: 0.707rem
+	h5
+		font-size: 0.4713333333333333rem
+	h6
+		font-size: 0.3535rem
+	
+	table
+		margin: 2rem 0
+		border-spacing: 0
+		border-collapse: collapse
+		border: 1px solid #ccc
+		table-layout: auto
+		word-break: normal
+		border-left: 0
+		border-right: 0
+		border-top: 0
+		width: initial !important
+	table.block-green-frame
+		border: 2px solid #84AF00
+	
+	table.details_table
+		width: 100% !important
+	
+	table caption
+		font-weight: 600
+		margin: 0 0 1.5rem
+		font-size: 1.4rem
+	
+	table tr:hover td
+		background: #fafafa
+	
+	table td,
+	table th
+		padding: 0
+		line-height: 1.3
+		p
+			margin: 0
+	
+	.block-green-frame
+		min-width: 100%
+	
+	thead,
+	.col-main-table-head
+		td
+			font-size: 1.1rem
+			font-weight: 600
+			white-space: nowrap
+			padding-top: 1.4rem
+			img
+				margin-right: 8px
+	
+	table td
+		border-bottom: 1px solid #fafafa
+		padding: 1rem
+		vertical-align: top
+		+td
+		ul
+			margin-top: 0
+			margin-bottom: 0
+		p
+			text-align: left !important
+	
+	
+	code
+		vertical-align: bottom
+	
+	.lead
+		font-size: 1.414rem
+	
+	.hug
+		margin-top: 0
+
+
+			
+	

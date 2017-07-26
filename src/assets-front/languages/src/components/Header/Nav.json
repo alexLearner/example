@@ -1,0 +1,62 @@
+[
+  {
+    "id": "footer.location",
+    "defaultMessage": "Местоположение"
+  },
+  {
+    "id": "footer.lang",
+    "defaultMessage": "Язык"
+  },
+  {
+    "id": "header.lists.faq",
+    "defaultMessage": "Часто задаваемые вопросы"
+  },
+  {
+    "id": "header.lists.rating",
+    "defaultMessage": "Рейтинг инновационных клиник мира"
+  },
+  {
+    "id": "header.lists.money",
+    "defaultMessage": "10 способов собрать деньги на лечение"
+  },
+  {
+    "id": "header.lists.title_treatment",
+    "defaultMessage": "Лечение за рубежом"
+  },
+  {
+    "id": "header.lists.about",
+    "defaultMessage": "О нас"
+  },
+  {
+    "id": "header.lists.specialization",
+    "defaultMessage": "Специализации"
+  },
+  {
+    "id": "header.lists.all_specialization",
+    "defaultMessage": "Смотреть все специализации"
+  },
+  {
+    "id": "header.lists.country",
+    "defaultMessage": "Страны"
+  },
+  {
+    "id": "header.lists.all_country",
+    "defaultMessage": "Смотреть все страны"
+  },
+  {
+    "id": "footer.useful",
+    "defaultMessage": "Полезное"
+  },
+  {
+    "id": "header.lists.go_ask",
+    "defaultMessage": "Задать вопрос"
+  },
+  {
+    "id": "footer.line",
+    "defaultMessage": "Гарячая линия поддержки"
+  },
+  {
+    "id": "footer.callback",
+    "defaultMessage": "Перезвоните мне"
+  }
+]

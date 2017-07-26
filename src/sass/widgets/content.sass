@@ -1,0 +1,49 @@
+.countries_container,
+.content_container
+	align-items: center
+	margin-bottom: 16px
+	&:last-child
+		margin-bottom: 0
+		
+.countries_content,
+.content_block
+	display: inline
+
+.countries_title,
+.content_title
+	display: inline
+	font-weight: bold
+	font-size: 16px
+	white-space: nowrap
+	margin-right: 12px
+	
+.content_column
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	.content_block
+		margin-top: 16px
+		width: 100%
+		column-count: 3
+		column-gap: 20px
+		>span
+			display: block
+			margin-bottom: 12px
+	+mobile
+		column-count: 2
+	
++tablet
+	.countries_title,
+	.content_title
+		margin-bottom: 12px
+		margin-right: 0
+		white-space: normal
+	.countries_container,
+	.content_container
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+	.countries_content,
+	.content_block
+		line-height: 2
+		

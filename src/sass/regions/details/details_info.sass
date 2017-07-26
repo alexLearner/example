@@ -1,0 +1,79 @@
+.details_info
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+
+.details_info_content
+	flex: 1 auto 
+	margin-bottom: 56px
+	ul
+		margin-left: 20px
+.details_info_sidebar
+	max-width: 290px
+	margin: 0 auto 
+	.details_info_title
+		display: flex
+		flex-direction: column
+		span
+			margin-left: 0
+
+.details_info_header
+	margin-bottom: 24px
+	margin-top: 56px
+	&:first-child
+		margin-top: 0
+	span 
+		margin-left: 8px
+	
+
+.details_info_places
+	display: flex
+	.search_doctor
+		max-width: 50%
+.details_info_more
+	font-size: 14px
+	float: right 
+	&:hover
+		text-decoration: underline
+
+.details_info_caption
+	margin-top: 12px
+	pointer-events: none !important
+.details_info_field_title
+	line-height: (48/16)
+	font-size: 16px
+	margin-top: 20px
+.details_info_field
+	margin-bottom: 20px
+	line-height: (20/14)
+	font-size: 14px
+	cursor: pointer
+	span
+		display: block
+		color: $gray
+	a:hover
+		text-decoration: underline
+	&:last-child
+		margin-bottom: 0
+
+
++tablet
+	.details_info_sidebar
+		margin: 24px 0 0
+	.details_info
+		flex-direction: column
+		> div
+			width: 100%
+			padding-right: 86px
+		>div:last-child
+			display: none 
+
++mobile
+	.details_info
+		padding: 16px
+		> div
+			padding-right: 0
+	.details_info_container
+		display: none
+	.details_info_content
+		margin-bottom: 0

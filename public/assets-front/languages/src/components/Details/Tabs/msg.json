@@ -1,0 +1,82 @@
+[
+  {
+    "id": "details.tabs.sort.recommended",
+    "defaultMessage": "Сначала рекомендованные"
+  },
+  {
+    "id": "details.tabs.sort.popularity",
+    "defaultMessage": "Сначала популярные"
+  },
+  {
+    "id": "details.tabs.sort.expensive",
+    "defaultMessage": "Сначала дорогие"
+  },
+  {
+    "id": "details.tabs.sort.new",
+    "defaultMessage": "Сначала новые"
+  },
+  {
+    "id": "details.tabs.sort.by_alphabet",
+    "defaultMessage": "Имена по алфавиту"
+  },
+  {
+    "id": "details.tabs.sort.cheap",
+    "defaultMessage": "Сначала дешевые"
+  },
+  {
+    "id": "details.tabs.get_consultation",
+    "defaultMessage": "Получить консультацию"
+  },
+  {
+    "id": "details.procedures.procedures_with_cost",
+    "defaultMessage": "Показывать только с ценами"
+  },
+  {
+    "id": "details.procedures.placeholder",
+    "defaultMessage": "ПЭТ-КТ, консультация онколога, Кибер-нож"
+  },
+  {
+    "id": "details.procedures.sort.is_not_sure",
+    "defaultMessage": "Не уверены в выборе процедуры?"
+  },
+  {
+    "id": "details.doctors.placeholder",
+    "defaultMessage": "Введите имя доктора"
+  },
+  {
+    "id": "details.reviews.media",
+    "defaultMessage": "Отзывы с медиа"
+  },
+  {
+    "id": "details.doctors.more",
+    "defaultMessage": "Загрузить еще 10 специалистов"
+  },
+  {
+    "id": "details.procedures.more",
+    "defaultMessage": "Загрузить еще 10 процедур"
+  },
+  {
+    "id": "details.reviews.moe",
+    "defaultMessage": "Загрузить еще 10 процедур"
+  },
+  {
+    "id": "details.nav.info",
+    "defaultMessage": "Обзор"
+  },
+  {
+    "id": "details.nav.reviews",
+    "defaultMessage": "Отзывы пациентов"
+  },
+  {
+    "id": "details.nav.doctors",
+    "defaultMessage": "Специалисты"
+  },
+  {
+    "id": "details.nav.diagnostics",
+    "defaultMessage": "Процедуры и стоимость"
+  },
+  {
+    "id": "details.nav.accommodation",
+    "defaultMessage": "Условия размещения"
+  }
+]

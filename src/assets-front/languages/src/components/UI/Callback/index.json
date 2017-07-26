@@ -1,0 +1,22 @@
+[
+  {
+    "id": "callback.title",
+    "defaultMessage": "Опишите цель обращения"
+  },
+  {
+    "id": "callback.your_phone",
+    "defaultMessage": "Ваш номер телефона"
+  },
+  {
+    "id": "callback.email",
+    "defaultMessage": "Адрес электронной почты"
+  },
+  {
+    "id": "callback.get_cost",
+    "defaultMessage": "Получить стоимость лечения"
+  },
+  {
+    "id": "callback.placeholder",
+    "defaultMessage": "Например: Сколько стоит лечение рака молочной железы 4 стадии в Израиле?"
+  }
+]

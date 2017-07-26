@@ -1,0 +1,50 @@
+[
+  {
+    "id": "search.tabs.more",
+    "defaultMessage": "Читать дальше"
+  },
+  {
+    "id": "search.nav.info",
+    "defaultMessage": "Описание"
+  },
+  {
+    "id": "in",
+    "defaultMessage": "в"
+  },
+  {
+    "id": "search.nav.reviews",
+    "defaultMessage": "Отзывы"
+  },
+  {
+    "id": "search.nav.doctors",
+    "defaultMessage": "Специалисты"
+  },
+  {
+    "id": "search.nav.diagnostics",
+    "defaultMessage": "Стоимость услуг"
+  },
+  {
+    "id": "search.nav.flights",
+    "defaultMessage": "Стоимость перелёта"
+  },
+  {
+    "id": "search.nav.on_page",
+    "defaultMessage": "на странице клиники"
+  },
+  {
+    "id": "search.nav.show_all",
+    "defaultMessage": "Показать все"
+  },
+  {
+    "id": "search.nav.reviews_count",
+    "defaultMessage": "{count} отзыва"
+  },
+  {
+    "id": "search.nav.show_all_kogo",
+    "defaultMessage": "Показать всех"
+  },
+  {
+    "id": "search.nav.doctors_count",
+    "defaultMessage": "{count} специалистов"
+  }
+]

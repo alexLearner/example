@@ -1,0 +1,186 @@
+$header_search_green : #7db700
+
+.header_search
+	position: relative
+	margin-right: 16px
+	min-width: 297px
+	margin-left: 20px
+	font-weight: 600
+	a:hover	
+		text-decoration: underline
+			
+	.icon
+		position: absolute
+		top: 0
+		bottom: 0
+		height: 16px
+		margin: auto
+		right: 14px
+		+td
+		&:hover path
+			fill: $header_search_green - #222
+	
+	&_input
+		border: 0
+		width: 100%
+		background: #fff
+		border-radius: 4px
+		padding: 8px 34px 9px 15px
+		font-weight: 500
+		overflow: hidden
+		text-overflow: ellipsis
+		font-family: $openSans
+		font-size: 14px
+		+td
+		color: #000
+		+placeholder
+			color: $gray
+		&:hover,
+		&:focus
+			+placeholder
+				color: $text
+			
+	&_hidden
+		background: #fff
+		position: absolute
+		top: 32px
+		width: 100%
+		left: 0
+		max-height: 0
+		overflow: hidden
+		border-radius: 0 0 4px 4px
+		font-size: 14px
+		padding: 4px 16px 0
+		display: none
+		color: $text
+		+td
+		&.active
+			display: block
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12)
+			max-height: 400px
+			overflow: auto
+			
+	&_items
+		margin-bottom: 12px
+		&:first-child
+			margin-top: 16px
+		&:last-child
+			margin-bottom: 0
+			
+	&_head
+		height: 36px
+		position: relative
+	&_title + &_item
+		padding-top: 0
+		
+	&_item
+		display: block
+		padding: 8px 16px
+		margin: 0 -16px
+		color: $blue
+		font-size: 12px
+		cursor: pointer
+		border-bottom: 1px solid #f2f2f2
+		+td
+		&:hover
+			background: #fafafa
+			text-decoration: none !important
+		span
+			color: $gray
+			font-size: 12px
+			
+	&_more
+		padding: 8px 16px
+		margin: 0 -16px
+		font-size: 12px
+		cursor: pointer
+		background: #fff
+		+td
+		&:hover
+			background: #fafafa
+			
+	&_title
+		color: $header_search_green
+		font-size: 12px
+		margin-bottom: 6px
+	
+	&_links
+		li
+			display: block
+			color: $blue
+			font-size: 12px
+			cursor: pointer
+			border-bottom: 1px solid #f2f2f2
+			&:last-child
+				border-bottom: 0
+	
+	&_overlay
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(0,0,0, .6)
+		z-index: 100
+		visibility: hidden
+		opacity: 0
+		max-height: 0
+		overflow: hidden
+		color: #fff
+		font-size: 14px
+		align-items: center
+		justify-content: center
+		&.active
+			max-height: initial
+			opacity: 1
+			visibility: visible
+			
+	+mobile
+		position: absolute
+		right: 16px
+		min-width: 36px
+		height: 36px
+		top: 0
+		margin: auto
+		bottom: 0
+		z-index: 2
+		&.active
+			.header_search_head,
+			.header_search_hidden
+				z-index: 101
+			.header_search_input
+				opacity: 1
+				display: block
+				max-width: 297px
+				width: 297px
+				visibility: visible
+			
+			.icon path
+				fill: $header_search_green
+		.icon
+			right: 10px
+		.icon path
+			fill: #fff
+		
+		&_overlay
+			display: flex
+		
+		&_input
+			+td
+			opacity: 0
+			display: none
+			max-width: 0
+			visibility: hidden
+			overflow: hidden
+			
+	@media (min-width: $tablet)
+		&_overlay.active
+			opacity: 0
+			z-index: -1
+		
+.header_search_overlay_container
+	max-width: 300px
+	p
+		margin: 10px 0 10px 10px
+	h2
+		font-size: 16px

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "search.nav.info",
+    "defaultMessage": "Описание"
+  },
+  {
+    "id": "search.nav.reviews",
+    "defaultMessage": "Отзывы"
+  },
+  {
+    "id": "search.nav.doctors",
+    "defaultMessage": "Специалисты"
+  },
+  {
+    "id": "search.nav.diagnostics",
+    "defaultMessage": "Стоимость услуг"
+  },
+  {
+    "id": "search.nav.flights",
+    "defaultMessage": "Стоимость перелёта"
+  },
+  {
+    "id": "search.get_cost",
+    "defaultMessage": "Получить стоимость лечения"
+  },
+  {
+    "id": "search.go_to_page",
+    "defaultMessage": "Перейти на страницу клиники"
+  }
+]

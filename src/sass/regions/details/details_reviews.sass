@@ -1,0 +1,200 @@
+.details_reviews 
+	+mobile
+		.details_tabs_body
+			padding: 0
+.details_review
+	padding-bottom: 24px
+	padding-top: 24px
+	border-bottom: 1px solid #D8D8D8
+	font-weight: 600
+	display: flex
+	&:first-child
+		padding-top: 0
+	&:last-child
+		border-bottom: 0
+
+	
+.details_review_comment
+	position: relative
+	z-index: 1
+	font-size: 14px
+	font-weight: normal
+	
+.details_review_footer
+	color: $gray
+	margin-top: 24px
+	font-weight: 600
+	>div
+		margin-bottom: 14px
+		display: flex
+		align-items: center
+		p
+			margin: 0 24px 0 0 
+	.btn
+		margin-right: 16px
+		&:last-child
+			margin-right: 0
+.details_review_video
+	background: #fff
+	box-shadow: 1px 1px 4px rgba(0,0,0,.08)
+	width: 100%
+	display: flex
+	align-items: stretch
+	margin-bottom: 32px
+	cursor: pointer
+
+.details_review_video_content
+	display: flex
+	padding: 0 23px
+	font-size: 14px
+	line-height: (23/14)
+	flex-direction: column
+	justify-content: center
+	span
+		color: $gray
+	p
+		margin-bottom: 10px
+.details_review_video_link
+	min-height: 112px
+	min-width: 166px
+	background-color: #000
+	background-size: cover
+	background-position: center
+	display: flex
+	align-items: center
+	justify-content: center
+	position: relative
+	.icon
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+		margin: auto
+		left: 0
+.details_review_info_field,
+.block_content .details_review_info_field
+	margin-bottom: 24px
+	p
+		color: $gray
+		margin-bottom: 4px
+
+.details_review_img
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 24px 0 4px
+	img
+		max-height: 112px
+		width: auto
+		margin-bottom: 20px
+		margin-right: 10px
+		border-radius: 4px
+		cursor: pointer
+
+.details_review_info_header
+	position: relative
+	min-height: 47px
+	display: flex
+	align-items: center
+	margin-bottom: 16px
+	a
+		color: $blue
+		&:hover
+			text-decoration: underline
+	p
+		margin-bottom: 6px
+		&:last-child 
+			margin-bottom: 0
+
+	.symbol_img
+		position: absolute
+		top: 6px
+		left: -52px
+
+.details_review_info
+	padding-left: 52px
+	padding-right: 20px
+	line-height: (20/13)
+	font-size: 13px
+	color: $text
+	.rating_list
+		margin-bottom: 12px
+
+.details_review_status
+	margin-bottom: 28px
+	font-size: 14px 
+	font-weight: 600
+	display: flex
+	align-items: center
+	// color: $text
+.details_review_status_img
+	border-radius: 100%
+	overflow: hidden
+	width: 24px
+	height: 24px
+	position: relative
+	margin-right: 16px
+	&:before,
+	&:after
+		content: ""
+		position: absolute
+		background: #fff
+		display: none 
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		margin: auto
+	&:before
+		width: 14px
+		height: 2px
+	&:after
+		height: 14px
+		width: 2px
+	&.negative
+		background: $orange
+		&:before
+			display: block 
+			height: 3px
+	&.positive
+		background: $green
+		&:before,
+		&:after
+			display: block 
+
+
++mobile
+	.details_review_info 
+		padding-left: 0
+		.symbol_img
+			left: 0
+	.details_review_info_header
+		padding-left: 47px
+	.details_review_info_block
+		margin-top: 20px
+	
+	.details_review
+		flex-direction: column
+		> div
+			padding: 0
+			width: 100%
+	.details_review_video_link
+		height: 0
+		padding-bottom: 33vh
+	.details_review_video_content
+		padding: 20px
+	.details_review_video
+		flex-direction: column
+	.details_review_footer
+		flex-direction: column
+		>div
+			flex-wrap: wrap
+		.btn.btn_form
+			margin-top: 12px
+		p
+			min-width: 100%
+			
++mobile-sm
+	.details_reviews 
+		> div
+			padding: 0

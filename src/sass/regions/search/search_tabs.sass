@@ -1,0 +1,520 @@
+@import "search_tab_nav"
+
+.search_tabs
+	padding: 16px
+	margin: 0 -24px
+	padding-bottom: 20px
+	padding-left: 300px
+	background-color: #fcfcfc
+	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.08)
+	border-radius: 0 0 10px 10px
+	&.preloader
+		min-height: 80px
+	.scroll-slider
+		position: static
+	.scroll-slider_container
+		margin-left: -300px
+		padding-left: 300px
+	.scroll-slider_shadow
+		&:before
+			left: -300px
+	+tablet
+		.scroll-slider_shadow
+			&:before
+				left: -24px
+			&:after
+				right: -24px
+			
+	&_nav
+		display: flex
+		width: 100%
+		margin-left: 280px
+		color: $text
+		font-size: 14px
+		font-weight: 600
+		line-height: 20px
+		margin-top: -12px
+		
+		span
+			color: $gray
+			margin-left: 12px
+			display: inline-block
+			
+		&_item
+			list-style: none
+			padding: 0 2px 11px
+			cursor: pointer
+			margin-right: 56px
+			border-bottom: 3px solid transparent
+			+td
+			&.active,
+			&:hover
+				color: $blue
+			&.active,
+			&:hover
+				border-color: currentColor
+			&:last-child
+				margin-right: 0
+			&.disabled
+				color: ($gray + #222) !important
+				pointer-events: none !important
+				tab-index: -1
+				span
+					display: none
+
+		&_item.mobile
+			display: none
+			margin-right: 0
+			
++mobile 
+	.search_tabs_nav_item.mobile
+		display: flex
+		&.active
+			border-color: #ebebeb !important
+
+
+.search_place
+	background: #fff
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.08)
+	border-radius: 4px
+	position: relative
+	font-size: 14px
+	font-weight: 600
+	cursor: pointer
+	.details_review_status
+		margin-bottom: 20px
+		font-size: 13px
+	.details_review_status_img
+		margin-right: 8px
+		width: 20px
+		height: 20px
+		&:before
+			width: 12px
+		&:after
+			height: 12px
+		
+	+td
+	&.noactive
+		cursor: auto
+		transition-duration: 0s
+	&:hover:not(.noactive)
+		background: rgba(241, 241, 241, 0.35)
+		.search_place_btn
+			background: #fafafa
+
+.search_place_content
+	padding: 31px 40px 41px 24px
+	max-width: 628px
+	font-size: 14px
+	line-height: (21/14)
+	flex: 1 100%
+	ul, ol
+		li
+			position: relative
+			display: block
+			margin: 12px 0
+			&:before
+				content: ""
+				display: inline-block
+				width: 6px
+				height: 6px
+				margin-top: -2px
+				vertical-align: middle
+				margin-right: 6px
+				background: $text
+				border-radius: 100%
+	> p
+		margin: 21px 0
+		&:last-child
+			margin-bottom: 0
+		&:first-child
+			margin-top: 0
+			
+.search_tab
+	justify-content: space-between
+	align-items: stretch
+	max-width: 100%
+	> div
+			max-width: 100%
+	display: none
+	&.active
+		display: flex
+
+.search_review_content
+	color: $blue
+	padding: 0
+	margin: 12px 0 18px
+	flex: 1 100%
+
+.search_review_clinic
+	margin-bottom: 12px
+	min-width: 100%
+	a:hover
+		text-decoration: underline
+
+.search_review_info
+	position: relative
+	display: flex
+	justify-content: flex-start
+	width: 100%
+	// margin-top: 20px
+	margin-bottom: 20px
+	padding-right: 20px
+	flex-wrap: wrap
+	.block_title
+		margin-right: 28px
+		margin-bottom: 0
+	.block_subtitle
+		margin-top: 0
+	.icon
+		position: absolute
+		right: 0
+		bottom: 4px
+.icon_flag
+	display: inline-block
+	max-width: 20px
+	max-height: 16px
+	margin-right: 8px
+	margin-top: -1px
+	vertical-align: middle
+.search_place_footer
+	margin-top: 19px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	color: $gray
+.search_reviews_footer
+	flex-direction: column
+	margin-top: 12px
+	align-items: stretch
+	justify-content: flex-start
+	+ .search_place_btn
+		margin-top: 0
+
+a.search_place_link
+	color: $gray
+	display: inherit
+	.icon
+		margin-right: 10px
+.search_place_btn
+	text-align: center
+	color: $text
+	background-color: #fff
+	line-height: 42px
+	height: 42px
+	min-height: 42px
+	overflow: hidden
+	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.08)
+	cursor: pointer
+	margin: 24px -16px 0
+	border-radius: 0 0 4px 4px
+	+td
+	&:active
+		line-height: 43px
+	&:hover 
+		background: #fafafa
+
+.search_place_subtitle
+	color: $gray
+.search_reviews
+	display: flex
+	justify-content: space-between
+	align-items: stretch
+	max-width: 100%
+.search_review
+	display: flex
+	flex-direction: column
+	min-width: 300px
+.search_review_content
+	flex: 1 auto
+	line-height: 23px
+	font-size: 14px
+.search_review,
+.search_doctor
+	padding: 21px 16px 0
+	position: relative
+	font-size: 14px
+	margin-right: 16px
+	flex: 1 50%
+	max-width: 356px
+	&:hover
+		text-decoration: none !important
+	&:last-child
+		margin-right: 0
+	.rating
+		position: absolute
+		right: 16px
+		top: 24px
+.search_doctor .rating
+		right: 0
+		top: 0
+
+.search_doctors
+	display: flex
+.search_doctor
+	width: 100% 
+	max-width: 356px
+	min-width: 356px
+	display: flex
+	flex-direction: column
+	margin-right: 16px
+	&:last-child
+		margin-right: 0
+
+.search_doctor
+	.block_info
+		flex: 1 auto
+.search_doctor_head
+	display: flex
+	align-items: flex-start
+.search_doctor_head_info
+	.block_title 
+		margin-bottom: 8px
+	.search_review_title
+		font-size: 16px
+		line-height: 28px
+	.block_subtitle
+		margin-bottom: 8px
+.search_doctor_content
+	font-size: 13px
+	color: $text
+.search_doctors_info
+	@extend .block_info;
+.search_doctor_img
+	border-radius: 4px
+	overflow: hidden
+	background-size: cover
+	background-position: center
+	width: 72px
+	min-width: 72px
+	height: 84px
+	margin-right: 15px
+
+.search_procedures,
+.search_transports
+	display: flex
+	align-items: stretch
+	width: 100%
+.search_procedure,
+.search_transport
+	flex: 1 50%
+	max-width: 440px
+	margin-left: 19px
+	padding: 20px 24px 0
+	display: flex
+	flex-direction: column
+	.search_place_btn
+		margin: 0 -24px 0
+	&:first-child
+		margin-left: 0
+.search_transport
+	a.search_place_btn
+		color: inherit
+		&:hover 
+			text-decoration: none
+.search_procedure_container
+	flex: 1 auto
+	margin-top: 4px
+
+.search_procedures_item
+	display: block
+	padding: 12px 24px 17px 
+	border-bottom: 1px solid #ebebeb
+	font-size: 14px
+	cursor: pointer
+	color: #4a4a4a
+	background: #fff
+	margin: 0 -24px
+	span
+		color: $text
+	+td
+	&:hover
+		background: #fafafa
+		text-decoration: none !important
+	&:last-child
+		border-bottom:  0
+	> p
+		font-size: 16px
+		color: $blue
+		margin-bottom: 6px
+.search_operations_title
+	font-size: 16px
+.search_count
+	color: $gray
+	display: inline-block
+	margin-left: 17px
+
+.search_transport
+	padding-left: 61px
+	.search_place_btn
+		margin-top: 22px
+		margin-left: -61px
+.search_transport_icon
+	width: 36px
+	height: 36px
+	position: absolute
+	left: 13px
+	top: 16px
+	border-radius: 100%
+	overflow: hidden
+	display: flex
+	align-items: center
+	justify-content: center
+	&.blue
+		background-image: radial-gradient(36px 36px at 100.44% 100.47%, #3023ae 0%, #53a0fe 100%)
+		box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5)
+	&.orange
+		background-image: radial-gradient(36px 36px at 100.55% 100.81%, #ae2340 0%, #fe9553 100%)
+		box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5)
+.search_transport_title
+	font-size: 16px
+	color: #4a4a4a
+	margin-bottom: 4px
+	line-height: 28px
+.search_transport_content
+	a
+		color: $blue
+		&:hover
+			text-decoration: underline
+.search_transport_selects
+	margin-top: 17px
+	margin-bottom: 19px
+	display: flex
+	justify-content: space-between
+	width: 100%
+.search_transport_cost
+	line-height: (21/16)
+	font-size: 16px
+	color: #3b3b38
+	margin-bottom: 4px
+.search_transport_time
+	font-size: 13px
+	color: $gray
+	line-height: (21/13)
+.search_transport_select
+	flex: 1 auto
+	margin-right: 10px
+	margin-left: 10px
+	&:first-child
+		margin-left: 0
+	&:last-child
+		margin-right: 0
+	.Select
+		width: 100% !important
+.search_transport_content
+	flex: 1 auto
+.search_tabs_info
+	&.hidden
+		padding-bottom: 0
+	.search_tabs_info_footer
+		margin: 24px -40px 0 -24px
+		+tablet-sm
+			margin: 24px -24px -24px
+		+mobile
+			margin: 24px -24px 0
+	.search_place_btn
+		margin: 0
+		color: $text
+		font-weight: 600
+		&:hover
+			text-decoration: none
+		
+	&.hidden >div:empty + div
+		display: none
+		
+	@media (max-width: 9999px) and (min-width: $mobile)
+		&:not(.hidden) .search_tabs_info_footer
+			display: none
+			
+	&.hidden > div:first-child
+		max-height: 200px
+		position: relative
+		overflow: hidden
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			bottom: 0
+			right: 0
+			left: 0
+			height: 20px
+			z-index: 1
+			background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1))
+	p
+		text-align: left !important
+
++tablet
+	.search_tabs .scroll-slider_container
+		margin-left: -24px
+		padding-left: 24px
+		margin-right: -24px
+	.search_tabs
+		padding-left: 24px
+		padding-right: 24px
+	.search_tabs_info
+		max-width: 628px
+	.search_doctor
+		min-width: 300px
+	.search_doctors 
+		flex: 1 auto
+	.search_tabs_nav
+		margin-left: 0
+		margin-top: 20px
+
++tablet-sm
+	.search_transport_selects
+		flex-direction: column
+	.search_transport_select
+		margin-bottom: 12px
+		&:first-child
+			margin-right: 0
+		&:last-child
+			margin-bottom: 0
+			margin-left: 0
+	.search_tab
+		max-width: initial
+		-ms-overflow-style: none
+		overflow: -moz-scrollbars-none
+		margin: 0 -24px
+		padding: 0 24px 10px
+		overflow: auto
+		&::-webkit-scrollbar
+			width: 0
+
+
++mobile
+	.search_procedures,
+	.search_transports,
+	.search_doctors,
+	.search_reviews 
+		flex-direction: column
+		.search_place
+			margin: 0 0 16px
+			width: 100%
+			flex: 1 auto
+			max-width: initial
+			&:last-child
+				margin-bottom: 0
+	.search_tab
+		flex-direction: column
+		overflow: visible
+
+
++mobile-sm
+	.search_place_content 
+		padding: 16px 16px 0
+	.search_place_btn 
+		margin: 20px -16px 0
+
+	.search_procedures_item
+		padding-top: 8px
+		padding-bottom: 8px
+		> p
+			font-size: 14px
+
+	.search_procedure .search_place_btn
+		margin-top: 20px
+
+	.search_transport .search_place_btn
+		margin-top: 42px
+

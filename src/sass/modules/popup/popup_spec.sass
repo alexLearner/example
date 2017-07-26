@@ -1,0 +1,46 @@
+.popup_spec_all
+	.popup_head
+		margin-top: 0 !important
+.popup_spec
+	.search_doctor_head
+		flex: initial
+.search_doctor_head
+	position: relative
+
+.popup
+	.popup_rating 
+		position: absolute
+		right: 0
+		top: 0
+	.search_place_subtitle
+		font-size: 13px
+	.search_doctor_content
+		line-height: 20px
+	.search_doctors_info
+		font-size: 14px
+	.search_doctors_btns
+		margin-top: 20px
+		
+.search_doctors_btns
+	@extend .block_btns
+
+.popup_tab_content
+	border-top: 1px solid #ebebeb
+	padding-top: 16px
+
+.popup_other_container
+	.search_place 
+		max-width: 100%
+		width: 100%
+		min-width: initial
+		margin-top: 16px
+
++mobile-sm
+	.popup_spec .popup
+		width: 100%
+		.btn_red
+			padding-left: 0
+			padding-right: 0
+		.popup_other
+			.rating
+				display: none

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "popup.cancel",
+    "defaultMessage": "Отмена"
+  },
+  {
+    "id": "filters.choose_country",
+    "defaultMessage": "Выберите страну"
+  }
+]

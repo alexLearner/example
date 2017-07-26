@@ -1,0 +1,33 @@
+.triangle
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	transition-duration: .3s
+	width: 10px
+	height: 6px
+	&:before,
+	&:after
+		content: ""
+		position: absolute
+		width: 0
+		height: 0
+		border-style: solid
+		top: 0
+	&:before
+		border-width: 5px 5px 0 5px
+		border-color: #50514c transparent transparent transparent
+		left: 0
+	&:after
+		border-width: 4px 4px 0 4px
+		border-color: #fff transparent transparent transparent
+		left: 1px
+
+.triangle_svg
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	transition-duration: .3s
+	width: 9px
+	height: 7px
+	background: url(/assets-front/img/icons/triangle.svg) center no-repeat
+	background-size: 100%

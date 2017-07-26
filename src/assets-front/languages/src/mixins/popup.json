@@ -1,0 +1,14 @@
+[
+  {
+    "id": "popup.cancel",
+    "defaultMessage": "отмена"
+  },
+  {
+    "id": "popup.close",
+    "defaultMessage": "Закрыть"
+  },
+  {
+    "id": "popup.back",
+    "defaultMessage": "Назад"
+  }
+]

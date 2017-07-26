@@ -1,0 +1,46 @@
+[
+  {
+    "id": "rating.very_good",
+    "defaultMessage": "Отлично"
+  },
+  {
+    "id": "rating.good",
+    "defaultMessage": "Хорошо"
+  },
+  {
+    "id": "rating.medium",
+    "defaultMessage": "Средне"
+  },
+  {
+    "id": "rating.bad",
+    "defaultMessage": "Плохо"
+  },
+  {
+    "id": "rating.very_bad",
+    "defaultMessage": "Очень плохо"
+  },
+  {
+    "id": "rating.speed",
+    "defaultMessage": "Оперативность ответа"
+  },
+  {
+    "id": "rating.qualification",
+    "defaultMessage": "Квалификация докторов"
+  },
+  {
+    "id": "rating.service",
+    "defaultMessage": "Оборудование"
+  },
+  {
+    "id": "rating.general",
+    "defaultMessage": "Общие"
+  },
+  {
+    "id": "rating.popularity",
+    "defaultMessage": "Сервис и комфорт"
+  },
+  {
+    "id": "rating.equipment",
+    "defaultMessage": "Популярность клиники"
+  }
+]

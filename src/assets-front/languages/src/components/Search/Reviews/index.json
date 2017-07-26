@@ -1,0 +1,10 @@
+[
+  {
+    "id": "search.reviews.title",
+    "defaultMessage": "Популярные отзывы"
+  },
+  {
+    "id": "search.reviews.more",
+    "defaultMessage": "Смотреть все отзывы"
+  }
+]

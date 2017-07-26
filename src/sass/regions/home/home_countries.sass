@@ -1,0 +1,49 @@
+.home_countries
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+	margin-top: 20px
+.home_countries_content
+	width: 320px
+	margin-right: 20px
+.home_countries_container
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: stretch
+	width: 608px
+.home_countries_item
+	min-width: 294px
+	margin-bottom: 20px
+	&.search_place
+		min-width: 294px
+.home_countries_item_content
+	padding: 20px
+.home_countries_item_title
+	margin-bottom: 12px
+	display: flex
+	align-items: center
+	justify-content: space-between
+.home_countries_item_flag
+	max-width: 26px
+	max-height: 16px
+	margin-right: 6px
+.home_countries_item_footer
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	line-height: (24/14)
+	font-size: 14px
+.home_countries_item_img
+	height: 0
+	padding-bottom: 164px
+	
++tablet-sm
+	.home_countries
+		flex-direction: column
+	.home_countries_content,
+	.home_countries_container
+		width: 100%
+		margin-right: 0
+	.home_countries_content
+		margin-bottom: 20px

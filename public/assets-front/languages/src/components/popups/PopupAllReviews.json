@@ -1,0 +1,26 @@
+[
+  {
+    "id": "popup.close",
+    "defaultMessage": "Закрыть"
+  },
+  {
+    "id": "popup.next_review",
+    "defaultMessage": "Следующий отзыв"
+  },
+  {
+    "id": "popup.load_more_rewievs",
+    "defaultMessage": "Загрузить еще 5 отзывов"
+  },
+  {
+    "id": "search.reviews.read_all_review",
+    "defaultMessage": "Читать весь отзыв"
+  },
+  {
+    "id": "search.reviews.video",
+    "defaultMessage": "Видео-отзыв"
+  },
+  {
+    "id": "search.reviews.photo",
+    "defaultMessage": "Фото-отзыв"
+  }
+]

@@ -1,0 +1,293 @@
+.details_wrapper
+	margin: 0 auto
+	padding-bottom: 36px
+	padding-top: 51px
+	width: 100%
+	background: #fafafa
+	&.preloader
+		min-height: 80vh
+	&.preloader.active
+		min-height: 0
+		
+
+.details
+	box-shadow: 0 1px 4px rgba(224,224,224, 1)
+	padding: 20px 0
+	font-weight: 600
+	background: #fff
+	color: $text
+
+.details_header_hidden
+	display: none
+	align-items: center
+	font-size: 14px
+	a
+		margin-left: 14px
+.details_header
+	display: flex
+	justify-content: space-between
+	margin-bottom: 34px
+	align-items: center
+	top: 51px
+	transition: top .3s
+	&.fixed
+		position: fixed
+		z-index: 1000
+		top: 0
+		background: #fff
+		left: 0
+		right: 0
+		margin: auto
+		padding-top: 8px
+		padding-bottom: 8px
+		.details_title
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+		.details_header_hidden .rating_list,
+		.details_header_hidden span,
+		.details_header_hidden a,
+		.details_header_btn span
+			+td
+		.details_header_left
+			max-width: calc(100% - 405px)
+			margin-top: -20px
+
+		.details_header_right
+			display: flex
+			margin-top: 12px
+		.details_header_btn
+			margin-top: 0
+		&.hide
+			min-height: 100px
+
+		@extend .block
+		.details_title
+			font-size: 20px
+			display: block
+		.details_header_hidden
+			display: flex
+		>div
+			position: relative
+			z-index: 1
+		.details_subtitle
+			display: none
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			top: 0
+			bottom: 0
+			right: -9999px
+			left: -9999px
+			background: #fff
+			box-shadow: 0 1px 4px rgba(224,224,224, 1)
+
+		+ .details_body
+			margin-top: 100px
+
+		+tablet
+			.details_header_left
+				max-width: calc(100% - 320px)
+				margin-top: 0
+			.details_header_right
+				width: 300px
+			.details_header_btn .btn
+				margin-top: 0
+.details_header_btn
+	width: 100%
+	flex-direction: column
+	align-items: center
+	color: $gray
+	font-size: 13px
+	display: flex
+	.btn
+		margin-bottom: 8px
+		margin-top: 0
+		width: 100%
+	+tablet
+		margin-top: 24px
+.details_title
+	display: flex
+
+	.icon
+		margin-left: 12px
+.details_header_left
+	flex-direction: column
+	flex: 1 auto
+	margin-right: 20px
+
+.details_header_right
+	width: 368px
+	display: flex
+	+tablet
+		display: none
+.details_subtitle
+	margin-top: 12px
+	font-size: 15px
+	line-height: (20/15)
+	i
+		margin-right: 10px
+	.link
+		margin-left: 24px
+
+.details_body
+	display: table
+	table-layout: fixed
+	width: 100%
+	>div
+		display: table-cell
+		vertical-align: top 
+		&:first-child
+			padding-right: 12px
+		&:last-child
+			padding-left: 12px
+	+tablet
+		> .size3of8,
+		> .size5of8
+			width: 50%
+		> .size5of8
+			padding-right: 0
+			
+.content .details_table
+	border: 0
+	margin: 0
+.details_table
+	border-spacing: 0
+	width: 100%
+	table-layout: fixed
+	font-size: 14px
+	font-weight: 600
+	border: 0
+	color: $text
+	a
+		color: $text
+	span
+		opacity: 0
+		visibility: hidden
+		+td
+		font-weight: 600
+	tr:nth-child(2n) td
+		background: #FBFBFB
+	tr
+		cursor: pointer
+		display: flex
+		align-items: stretch
+	tr:hover
+		span
+			opacity: 1
+			visibility: visible
+	td
+		padding: 12px 16px
+		width: 50%
+		justify-content: space-between
+		display: flex
+		align-items: center
+		position: relative
+		&:last-child
+			color: $gray
+	.triangle
+		display: none
+		transform: rotate(-90deg)
+		position: absolute
+		right: 25px
+		top: 0
+		bottom: 0
+		margin: auto
+
++mobile
+	.details
+		padding-bottom: 0
+	.details_body
+		display: block
+		> div,
+		> .size3of8,
+		> .size5of8
+			display: block
+			width: 100% 
+
+	.details_table
+		tr:nth-child(n) td
+			background: transparent
+		tr:last-child
+			td
+				border-bottom: 0
+		td
+			border-bottom: 1px solid #E0E0E0
+			padding-left: 0
+			padding-right: 0
+			position: relative
+			.triangle
+				display: block
+		span
+			display: none
+
++mobile-sm
+	.details
+		box-shadow: none
+		
+	.details_table
+		display: block
+		tbody
+			display: block
+		tr
+			display: flex
+			flex: 1 auto
+			flex-direction: column
+			padding: 12px 0
+			position: relative
+			border-bottom: 1px solid #E0E0E0
+			&:last-child
+				border-bottom: 0
+		td
+			width: 100%
+			padding: 0 30px 0  0
+			position: static
+			border-bottom: 0
+		.triangle
+			right: 20px
+	.details_header
+		margin-bottom: 24px
+	.details_subtitle
+		display: none
+	.details_title
+		display: block
+
+		.icon
+			display: inline-block
+			vertical-align: middle
+			width: 24px
+
+	.details_banner
+		margin-top: 16px
+
+.details_filters_selected
+	margin: 24px 0 32px
+	font-size: 16px 
+	display: flex
+	align-items: center
+	+tablet
+		display: none
+.details_filters_selected_title
+	cursor: pointer
+	color: $blue
+	border-bottom: 1px dashed $gray
+	&:hover
+		border-color: transparent
+
+.details_filters_selected_change
+	margin-left: 24px
+	color: $gray
+	font-size: 14px
+	cursor: pointer
+
++mobile
+
+@import "details_gallery"
+@import "details_banner"
+@import "details_tabs"
+@import "details_reviews"
+@import "details_info"
+@import "details_control"
+@import "details_doctors"
+@import "details_accommodation"

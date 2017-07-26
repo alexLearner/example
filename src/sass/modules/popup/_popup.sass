@@ -1,0 +1,469 @@
+.layout_popup
+	background: $bg-overlay
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	-webkit-overflow-scrolling : touch !important
+	bottom: 0
+	z-index: -999999
+	display: block
+	backface-visibility: hidden
+	opacity: 0
+	font-weight: 600
+	+td
+	visibility: hidden
+	overflow: auto
+	text-align: center
+	&.layout_popup_side
+		text-align: center
+		.region_popup
+			height: calc(100% - 80px)
+		.popup
+			flex: 1 auto
+			margin: 40px 0
+			min-height: 20%
+			background: #fff
+	&:before
+		display: inline-block
+		vertical-align: middle
+		height: 100%
+		content: ""
+	&.active,
+	&.is-active
+		visibility: visible
+		opacity: 1
+		z-index: 9999
+
+.popup_back 
+	position: absolute
+	left: 25px
+	top: 25px
+	+td
+	cursor: pointer
+	&:hover
+		opacity: .6
+
+.popup_btn
+	line-height: 42px
+	height: 42px
+	max-height: 42px
+	overflow: hidden
+	background-color: #fafafa
+	border-radius: 0 0 4px 4px
+	cursor: pointer
+	border-top: 1px solid #fafafa - #111
+	text-align: center
+	color: #3b3b38
+	font-size: 14px
+	margin: 24px -24px 0
+	+td
+	&:hover
+		background-color: #fafafa - #111
+	&:active
+		line-height: 43px
+		background-color: #fafafa - #222
+
+.layout_popup_side
+	&:before
+		display: none
+	.popup
+		width: 100%
+		margin-top: 65px
+		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12)
+	.region_popup 
+		max-width: 800px
+		width: 90%
+
+.popup_overlay
+	position: fixed
+	height: 100%
+	top: 0
+	left: 0
+	right: 16px
+	bottom: 0
+	z-index: 1
+
+.region_popup
+	display: inline-block
+	vertical-align: middle
+	text-align: center
+	padding: 20px 0 20px
+	margin: 0 auto
+	width: 96%
+	max-width: 788px
+
+.popup
+	display: flex
+	margin: 0 auto
+	flex-direction: column
+	width: 100%
+	box-sizing: border-box
+	z-index: 2
+	background: #fff
+	color: #000
+	position: relative
+	transform: translate3d(0,0,0)
+	padding: 20px 24px 0
+	text-align: left
+	table
+		table-layout: fixed
+		td
+			font-size: 12px
+			padding: 8px
+			vertical-align: top
+			&:first-child
+				padding-left: 0
+			&:last-child
+				padding-right: 0
+	.search_review
+		width: 100%
+		max-width: 100%
+		margin-bottom: 24px
+		&:last-child
+			margin-bottom: 0
+	.search_place 
+		box-shadow: 1px 0 2px rgba(0, 0, 0, 0.14)
+.popup_content
+	@extend .block_content
+	margin-top: 40px
+.popup_subtitle
+	@extend  .block_title
+
+.popup_header	
+	font-size: rem(34)
+	font-weight: 400
+	text-align: center
+	margin-bottom: 25px
+
+.popup_head
+	font-weight: 600
+	font-size: 14px
+	color: $text 
+	margin: 24px -24px	
+	padding: 0 24px
+	position: relative
+	p
+		margin-bottom: 4px
+	span
+		color: $gray
+		font-size: 13px
+	.icon_find
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+
+.popup_img
+	background: #ededed url('/assets-front/img/bg/popup_img.jpg') center no-repeat
+	padding: 23px 0 16px
+	text-align: center
+	font-size: 20px
+	position: relative
+	line-height: (24/20)
+	> p
+		margin-top: 10px
+
+.popup_error
+	text-align: center
+	padding-top: 40px
+	padding-bottom: 40px
+.popup_error_img
+	width: 200px
+	
+.popup_form
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: flex-start
+	max-width: 506px
+	margin-left: auto
+	margin-right: auto
+	width: 100%
+
+.popup_field
+	margin-bottom: 12px
+	width: 100%
+	p
+		margin-bottom: 5px
+
+.popup_field_inline
+	flex: 1 243px
+	max-width: 243px
+
+.popup_btns		
+	margin-top: 18px
+	width: 100%
+	text-align: center
+
+.popup_close_icon
+	width: 12px
+	height: 12px
+	display: inline-block
+	vertical-align: middle
+	margin-left: 12px
+	margin-top: -2px
+.popup_close
+	height: 54px
+	justify-content: space-between
+	margin: -20px -24px 20px
+	background-color: #fcfcfc
+	align-items: center
+	color: #c2c2c2
+	font-size: 14px
+	font-weight: 600
+	display: flex 
+	padding: 0 32px
+	z-index: 1
+	transition-duration: .3s
+	polygon:last-child,
+	path:last-child
+		fill: #c2c2c2
+		+td
+
+	.icon_close:before,
+	.icon_close:after
+		background: #c2c2c2
+		+td
+	> span
+		padding: 10px
+		margin-right: -10px
+		+td 
+	span
+		cursor: pointer
+		&:hover
+			polygon:last-child,
+			path:last-child,
+				fill: #000
+			color: #000 
+			.icon_close:before,
+			.icon_close:after
+				background: #000
+
+.popup_head_back
+	display: flex
+	align-items: center
+	.icon
+		margin-bottom: -2px 
+		margin-right: 10px
+.popup_back_link
+	position: absolute
+	right: 0
+	top: 0
+	line-height: 21px
+	color: $gray
+	font-size: 14px
+	cursor: pointer
+	font-weight: 600
+	&:hover
+		text-decoration: underline
+	.popup_close_icon
+		display: none
+
+.popup_rating
+	position: absolute
+	top: 24px
+	right: 24px
+	cursor: pointer
+.popup_all_item
+	display: block
+	cursor: default
+	position: relative
+	border-top: 1px solid #ebebeb
+	padding: 24px
+	margin: 0 -24px 
+	&:first-child
+		border-top: 0
+		padding-top: 0
+		
+.popup_nav
+	border-bottom: 1px solid #ebebeb
+	display: flex
+	background: #FCFCFC
+	justify-content: space-between
+	margin: -20px -24px 0
+	overflow: hidden
+	position: relative
+	&:after
+		content: ""
+		background: #E0E0E0
+		width: 2px
+		height: 20px
+		left: 0
+		right: 0
+		margin: auto
+		top: 0
+		bottom: 0
+		position: absolute
+		
+.popup_nav_item
+	cursor: pointer
+	height: 40px
+	padding: 0 16px
+	display: flex
+	align-items: center
+	justify-content: center
+	font-size: 13px
+	font-weight: 600
+	color: $gray
+	+td
+	&:hover
+		color: $text
+	span
+		margin: 0 12px
+		
+
+.popup_tabs 
+	margin-top: 28px
+
+.popup_review
+	position: relative
+	.search_review_title
+		padding-left: 0
+
+.region_popup_white_close
+	padding-top: 65px
+.popup_close_white
+	color: #fff
+	left: 0
+	justify-content: space-between
+	display: flex
+	text-align: right
+	position: absolute
+	top: -40px
+	right: 0
+	font-size: 14px
+	white-space: nowrap
+	> div
+		cursor: pointer
+		display: flex
+		align-items: center
+	svg
+		margin-right: 10px
+	svg polygon:last-child
+		fill: #fff
+	.icon_close
+		&:before, &:after
+			background: #fff !important
+
+.popup_container
+	flex: 1 auto
+	margin-bottom: 24px
+.popup_container + .popup_btn
+	margin-top: 0
+
+.popup_close_white 
+	path:last-child
+		fill: #fff !important
+
++mobile-sm
+	.popup table td
+		font-size: 10px
+	.layout_popup_side  .region_popup 
+		padding: 80px 8px 20px
+		width: 100%
+		height: auto
+		display: block
+		.popup
+			height: auto
+			margin-bottom: 20px
+	.layout_popup_side .popup
+		width: 100% 
+	.popup_close
+		background: transparent
+		position: absolute
+		top: -54px
+		width: 100%
+		margin: 0
+		padding: 0 16px 0
+		right: 0
+		color: #fff
+		z-index: 1
+		&:hover 
+			span
+				color: #fff
+			&:before, &:after 
+				background: #fff
+		.icon_close:before,
+		.icon_close:after,
+			background: #fff
+	.popup_head
+		margin: 0 -16px 16px
+		padding: 0 16px 16px
+		border-bottom: 1px solid #ebebeb
+	.popup
+		padding: 20px 16px 0
+	.popup_nav
+		margin: -20px -16px 0
+	.popup_all_item	
+		padding: 16px
+		margin: 0 -16px
+		display: block
+	.popup_btn
+		margin: 32px -16px 0
+	.popup_according 
+		margin-right: -16px
+	.popup_according .popup_according_content
+		display: block
+	.popup_tab_content
+		border: 0
+		padding-top: 0
+	.popup_according_content
+		max-height: initial
+		visibility: visible
+		display: block
+		opacity: 1 
+		margin-bottom: -16px
+		.block_title 
+			margin-right: -16px
+	.popup
+		.search_place 
+			box-shadow: 1px 0 3px rgba(0,0,0,.14)
+	.popup_according 
+		padding-top: 16px
+		padding-bottom: 16px
+		&:last-child
+			padding-bottom: 0
+	.popup_according_title
+		cursor: text
+		display: block
+		padding: 0
+		border: 0
+		margin-bottom: 16px
+		&:hover
+			text-decoration: none
+		.triangle
+			display: none
+
+	.popup_other
+		padding-top: 16px
+
+	.popup_back_link
+		color: #fff
+		position: absolute
+		top: -52px
+		right: 0
+		z-index: 1
+		.popup_close_icon
+			display: inline-block
+		.icon_close
+			display: block
+			&:before,&:after
+				background: #fff
+
+.popup_callback_tel
+	margin-top: 10px
+	font-size: 13px
+	color: #4a4a4a
+	span
+		margin-right: 8px
+	.link_tel, span
+		vertical-align: middle
+		display: inline-block
+	
+@import "./_popup_review"
+@import "./popup_spec"
+@import "./popup_callback"
+@import "./popup_filters"
+@import "./popup_diagnostics"
+@import "./popup_success"

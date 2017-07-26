@@ -1,0 +1,201 @@
+.rating
+	background: #0f74bc
+	border-radius: 10px
+	color: #fff
+	display: flex
+	justify-content: center
+	height: 20px
+	font-size: 12px
+	align-items: center
+	font-weight: bold
+	min-width: 48px
+	max-width: 48px
+	i
+		margin-left: 2px
+
+	+mobile-sm
+		i
+			margin-top: -1px
+
+	&:hover
+		.rating_hidden
+			opacity: 1
+			visibility: visible
+			overflow: visible
+			left: auto
+			max-height: initial
+			max-width: 328px 
+			padding: 28px
+
+.rating_hidden
+	@extend .tooltip_container
+.rating_alltime_visible.rating 
+	max-width: 100%
+	border-radius: 0
+	background: transparent
+	color: $text
+	height: auto
+	position: relative
+	z-index: 0
+	.sprite
+		display: none
+	.rating_hidden
+		z-index: 0
+		position: static
+		width: 100%
+		max-width: 100%
+		padding: 0
+		margin: 0
+		opacity: 1
+		visibility: visible
+		max-height: initial
+		height: auto
+		overflow: visible
+		border: 0
+		border-radius: 0
+	.triangle
+		display: none
+
+.rating_title
+	display: flex 
+	justify-content: space-between
+	font-size: 14px
+	margin-bottom: 12px
+	
+.rating_item
+	margin-bottom: 30px
+	&:last-child
+		margin-bottom: 0
+.rating_line
+	position: relative
+	z-index: 2
+	height: 4px
+	margin-bottom: 8px
+.rating_line_bg
+	content: ""
+	position: absolute
+	left: 28px
+	right: 0
+	height: 4px
+	background: #ccc
+	z-index: 1
+
+.rating_msg
+	position: absolute
+	right: 100%
+	margin-right: 10px
+	color: $text 
+
++mobile
+	.rating_msg
+		display: none
+
+.rating_list
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin-right: 20px
+	.tooltip
+		display: inline-block
+		vertical-align: middle
+		margin-right: 16px
+	&.disabled li,
+	&.disabled ul
+		tab-index: -1
+		pointer-events: none
+		
+.rating_list.small
+	.rating_list_item
+		svg
+			width: 13px
+			height: 13px
+.rating_list_container ul
+	display: flex 
+.rating_list_active
+	svg, path
+		fill: #EF8E2B !important
+.rating_list_container
+	position: relative
+	height: 16px
+	margin-right: 14px
+	.rating_list_active
+		top: 0
+		left: 0
+		width: 0
+		position: absolute
+		overflow: hidden
+.rating_list_item
+	list-style: none
+	margin-right: 4px
+	cursor: pointer
+	+td	
+	&.active,
+	&:hover,
+	&.after_active
+		svg, path
+			fill: #EF8E2B !important
+	&:last-child
+		margin-right: 0
+.rating_list_text
+	font-size: 14px
+	color: $blue
+	white-space: nowrap
+
+.popup_rating
+	cursor: auto !important
+
+.rating_blue
+	.rating_line
+		background: #0F74BC !important
+	.rating_title span
+		color: #0F74BC !important
+
++mobile-sm
+	.rating:hover .rating_hidden 
+		max-width: 280px
+		right: 0
+		.triangle
+			right: 5px
+
+			
+.rating_tooltip
+	font-size: 14px
+	.rating_list
+		margin: 0
+
+	.rating_list_text
+		color: $text
+	&:last-child
+		margin-bottom: 0
+.rating_tooltip_title
+	font-size: 16px
+	line-height: 2
+	margin-bottom: 4px
+	letter-spacing: -.6px
+.rating_tooltip_head
+	display: flex
+	flex-wrap: nowrap
+	.rating_list_container
+		height: 16px
+	.rating_list_text
+		margin-left: 10px
+.rating_tooltip_container
+	margin-top: 16px
+.rating_tooltip_footer
+	margin-top: 20px
+	font-size: 14px
+
+.rating_tooltip_field
+	font-size: 14px
+	line-height: 24px
+	margin-bottom: 4px
+	display: flex
+	align-items: center
+	.rating_list_container
+		order: 2
+		position: relative
+		top: 2px
+	.rating_list_text
+		order: 1
+		color: $gray
+		margin-right: 8px

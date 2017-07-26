@@ -1,0 +1,371 @@
+.filters
+	position: fixed
+	+td
+	top: 51px
+	left: 0
+	right: 0
+	z-index: 8888
+	color: #4a4a4a
+	display: flex
+	flex-direction: column
+	font-size: 16px
+	align-items: center
+	line-height: 21px
+	font-weight: 600
+	overflow: hidden
+	letter-spacing: initial
+	.checkbox
+		font-size: 14px
+		margin-top: -11px
+	&.active
+		padding: 51px 16px 20px
+		overflow: auto
+		display: block
+		z-index: 9000
+		top: 0
+		max-height: 100vh
+		.fitlers_title 
+			padding: 0
+		.block
+			box-shadow: 0 0 10px rgba(0,0,0, .13)
+			border-radius: 4px
+			width: 100%
+			padding: 16px
+			overflow: visible
+			margin-left: auto
+			margin-right: auto
+			&:before
+				display: none
+		.filters_container
+			padding: 16px
+			display: flex
+	.link
+		margin-left: 30px
+		font-size: 14px
+	.block
+		justify-content: flex-start
+		display: flex
+		margin: 0
+		z-index: 2
+		position: relative
+		border-radius: 0
+		box-shadow: 0 1px 0 #f4f4f4
+		background: #fff
+		padding: 16px 0
+		width: calc(100% - 48px)
+		max-width: 1312px
+		&:before
+			position: absolute
+			background: #fff
+			z-index: -1
+			left: -24px
+			right: -24px
+			bottom: 0
+			top: 0
+			content: ""
+			display: block
+			border-radius: 0 0 4px 4px
+			box-shadow: 0 1px 4px #E0E0E0, inset 0 1px 2px #E0E0E0
+			@media (min-width: 1400px) 
+				left: -9999px
+				right: -9999px
+		> .link
+			color: $gray
+			margin-left: 8px
+	+tablet
+		.block 
+			justify-content: space-between
+
+.filters_close
+	display: none
+.filters.active
+	.filters_close
+		display: flex
+.filters_header
+	font-weight: bold
+	text-transform: uppercase
+	font-size: 14px
+	margin-top: 12px
+	padding: 8px 16px
+	margin: 0 -16px
+	box-shadow: 0 1px 0 #f4f4f4
+	cursor: pointer
+	display: none
+	background: #fff
+.filters_country .filters_header
+	top: 0
+.filters_overlay
+	@extend .layout_popup
+	&.active 
+		z-index: 1 !important
+
+.fitlers_title 
+	br
+		display: none
+.filters_link
+	color: $blue
+	cursor: pointer
+	+td
+	&:hover, &.is-active
+		color: $text 
+
+.filters_container 
+	background: #fff
+	margin-top: 8px
+	font-weight: 600
+	display: none
+	max-width: 1312px
+	color: $text
+	flex-direction: column
+	overflow: auto
+	height: calc(100vh - 25px)
+	max-height: calc(100vh - 25px)
+	width: 100%
+	z-index: 2
+	position: relative
+	margin-left: auto
+	margin-right: auto
+
+.filters_procedures
+	.filters_list
+		padding-left: 0
+		min-height: 0
+	.filters_list_item:empty
+		display: none
+		
+
+
+.filters_control
+	color: $gray
+	margin: 20px 0 36px
+	
+.filters_control_item
+	display: inline-block
+	vertical-align: top
+	text-align: center
+	line-height: 28px
+	border-radius: 4px
+	height: 28px
+	padding: 0 3px
+	cursor: pointer
+	+td
+	&.active, &:hover
+		background: $green
+		color: #fff
+
+.filters_lists_scroll
+	flex: 1 auto
+	position: relative
+	display: flex
+	flex-direction: column
+
+.filters_lists
+	margin-bottom: -30px
+	font-size: 14px
+	line-height: (20/14)
+	flex: 1 auto
+	.green
+		background: $green
+		color: #fff !important
+
+.filters_list
+	&:empty
+		display: none
+		margin-bottom: 0
+		
+.filters_list
+	padding-left: 50%
+	position: relative
+	padding-right: 24px
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	&:empty
+		width: 0
+		min-height: 0
+		min-width: 0
+	
+.filters_list_item_title
+	text-transform: uppercase
+	font-weight: bold
+	position: absolute
+	left: 0
+	top: 0
+	
+.filters_list_item.filters_list_item_title:last-child:first-child
+	position: static
+	margin-left: calc(-100% - 24px)
+
+.filters_list_item
+	list-style: none
+	color: $text
+	display: table
+	cursor: pointer
+	margin-bottom: 12px
+	&:first-child
+		margin-top: 0
+		&[hidden]
+			display: block
+			position: static
+			margin-top: -42px
+			height: 0
+			overflow: hidden
+			visibility: hidden
+			
+	&:last-child[hidden]
+		opacity: 0
+		display: initial
+		visibility: hidden
+		margin-bottom: 12px
+	&:last-child
+		margin-bottom: 30px
+	&[hidden]
+		display: none
+	&:first-letter
+		text-transform: uppercase
+	&:hover
+		text-decoration: underline
+
+
+.filters_footer
+	margin-top: 36px
+	border-radius: 4px
+	background: #fafafa
+	padding: 16px 20px
+	margin-bottom: 20px
+	font-size: 16px
+	+mobile
+		padding: 16px 0
+		>span
+			margin-right: 0
+	> span
+		min-width: 360px
+		margin-right: 20px
+	.btn
+		max-width: 260px
+		display: inline-block
+.filters_not_found
+	font-size: 20px
+	margin-top: 30px
+	align-items: center
+	display: flex
+	justify-content: center
+	top: 0
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+
+.filters_country
+	.filters_tabs
+		display: none
+.filters_tabs
+	display: flex
+	margin-bottom: 12px
+	min-height: 32px
+	border-bottom: 1px solid #ccc
+.filters_tabs_item
+	list-style: none
+	padding-bottom: 7.5px
+	font-size: 14px
+	+td
+	border-bottom: 3px solid transparent
+	margin-right: 34px
+	position: relative
+	cursor: pointer
+	&:hover
+		color: $blue
+	&.active
+		color: $blue
+		border-color: currentColor
+
+.input.input_big.filters_input
+	padding-right: 40px
+		
+.filters_clear
+	position: absolute
+	right: 22px
+	width: 10px
+	height: 12px
+	margin: auto
+	bottom: 0
+	top: 0
+	cursor: pointer
+	opacity: 1
+	visibility: visible
+	+td
+	&.hidden
+		opacity: 0
+		visibility: hidden
+	img
+		display: block
+	&:hover
+		opacity: .6
+
++tablet
+	.filters .block
+		width: 100%
+		padding: 16px
+
++mobile
+	.filters
+		font-size: 13px
+	.fitlers_title,
+	.filters .link
+		font-size: 12px
+	.filters .link
+		display: inherit
+	.fitlers_title
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+		max-width: 100%
+	.fitlers_title br 
+		display: block
+	.filters_footer
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		text-align: center
+		span
+			margin-bottom: 12px
+	.filters_header
+		display: block
+		z-index: 1
+		position: relative
+		min-height: 36px
+	.filters_lists_scroll
+		overflow: auto
+	.filters_list
+		padding-left: 0
+		position: static
+	.filters_list_item_title
+		position: static
+		
++mobile-sm
+	.filters_lists
+		margin-top: 24px
+	.filters_control
+		display: none
+
+@media (max-width: 560px)
+	.filters
+		.checkbox
+			margin-top: 0
+			margin-bottom: 8px
+			font-size: 12px
+	.filters_footer 
+		span
+			min-width: 0
+		.btn
+			margin-top: 12px
+	.filters_tabs
+		overflow: hidden
+		width: 100%
+		border-bottom: 1px solid #ccc
+	.filters_tabs_item
+		font-size: 12px
+		margin-right: 16px
+		&:before
+			display: none
+

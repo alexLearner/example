@@ -1,0 +1,10 @@
+[
+  {
+    "id": "or",
+    "defaultMessage": "или"
+  },
+  {
+    "id": "footer.callback",
+    "defaultMessage": "Перезвоните мне"
+  }
+]

@@ -1,0 +1,62 @@
+.home_coordinators_content
+	width: 100%
+	max-width: 326px
+	font-size: 16px
+	padding-top: 20px
+	margin-right: 20px
+	p
+		margin-bottom: 20px
+		line-height: (28/16)
+	small
+		font-size: 14px
+.home_coordinators_items
+	width: 608px
+	min-width: 608px
+	margin-bottom: -20px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+.home_coordinators_item
+	margin-bottom: 20px
+	width: 292px
+	min-width: 292px
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+	padding: 20px 16px
+.home_coordinators_img
+	width: 74px
+	height: 92px
+	margin-right: 14px
+	border-radius: 4px
+	overflow: hidden
+.home_coordinators_item_content
+	font-size: 14px
+	flex: 1
+	p
+		font-size: 16px
+	span
+		color: $gray
+		line-height: (23/14)
+.home_coordinators_body
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+
++tablet-sm
+	.home_coordinators_body
+		display: flex
+		flex-direction: column
+	.home_coordinators_content
+		max-width: 100%
+		width: 100%
+		margin-right: 0
+	.home_coordinators_item
+		margin-bottom: 0
+		margin-right: 20px
+	.home_coordinators_items
+		width: 100%
+		max-width: 100%
+		min-width: 0
+		justify-content: flex-start
+		

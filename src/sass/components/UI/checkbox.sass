@@ -1,0 +1,22 @@
+.checkbox
+	display: flex
+	align-items: center
+	> p
+		cursor: pointer
+	input
+		display: none
+.checkbox_container
+	width: 24px
+	height: 24px
+	border-radius: 4px
+	cursor: pointer
+	overflow: hidden
+	border: 2px solid $gray
+	margin-right: 16px
+	display: flex
+	align-items: center
+	justify-content: center
+	+td
+	&.active
+		background: $green
+		border-color: $green

@@ -1,0 +1,25 @@
+.popup_diagnostic_head
+	display: flex
+	justify-content: space-between
+.popup_diagnostic_head_info
+	flex: 1 100%
+.popup_diagnostic_img
+	min-width: 182px
+	height: 129px
+	background-position: center
+	background-size: cover
+	border-radius: 4px
+	cursor: pointer
+	margin-right: 16px
+
++mobile-sm
+	.popup_diagnostic
+		.popup_diagnostic_head
+			flex-direction: column
+		.popup_diagnostic_img
+			margin-right: 0
+			margin-bottom: 16px
+			height: 0
+			padding-bottom: 60%
+		.according_tab .block_content
+			margin-top: 16px

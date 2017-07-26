@@ -1,0 +1,38 @@
+[
+  {
+    "id": "filters.you_look",
+    "defaultMessage": "Вы просматриваете"
+  },
+  {
+    "id": "place.hotels.super_offer",
+    "defaultMessage": "Суперпредложения (4-5 звезд)"
+  },
+  {
+    "id": "place.hotels.simple_race",
+    "defaultMessage": "Прямым рейсом"
+  },
+  {
+    "id": "place.hotels.cheap",
+    "defaultMessage": "Дешевые (3-4 звезды)"
+  },
+  {
+    "id": "place.hotels.hotel_price",
+    "defaultMessage": "от {price} / сутки"
+  },
+  {
+    "id": "place.hotels.hard_race",
+    "defaultMessage": "С пересадками"
+  },
+  {
+    "id": "place.hotels.price",
+    "defaultMessage": "от {price}"
+  },
+  {
+    "id": "place.hotels.bilets_on_gf",
+    "defaultMessage": "Выбрать билеты на Google Flights"
+  },
+  {
+    "id": "place.hotels.bilets_on_b",
+    "defaultMessage": "Выбрать отель на Booking.com"
+  }
+]

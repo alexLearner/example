@@ -1,0 +1,22 @@
+[
+  {
+    "id": "home.titles.countries",
+    "defaultMessage": "Популярные страны"
+  },
+  {
+    "id": "home.titles.procedures",
+    "defaultMessage": "Процедуры"
+  },
+  {
+    "id": "home.titles.articles",
+    "defaultMessage": "Cтатьи"
+  },
+  {
+    "id": "home.titles.coordinators",
+    "defaultMessage": "Координаторы Bookimed"
+  },
+  {
+    "id": "home.titles.faq",
+    "defaultMessage": "Лечение за рубежом с международным центром поддержки пациентов Bookimed"
+  }
+]

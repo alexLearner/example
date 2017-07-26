@@ -1,0 +1,10 @@
+[
+  {
+    "id": "search.doctors.title",
+    "defaultMessage": "Ведущие специалисты клиники"
+  },
+  {
+    "id": "search.doctors.more",
+    "defaultMessage": "Смотреть всех специалистов"
+  }
+]

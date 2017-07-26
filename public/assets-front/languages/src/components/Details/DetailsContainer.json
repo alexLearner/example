@@ -1,0 +1,22 @@
+[
+  {
+    "id": "details.text",
+    "defaultMessage": "text"
+  },
+  {
+    "id": "details.get_cost",
+    "defaultMessage": "Получить стоимость лечения"
+  },
+  {
+    "id": "details.today",
+    "defaultMessage": "сегодня"
+  },
+  {
+    "id": "details.deals",
+    "defaultMessage": "{count} обращений сегодня"
+  },
+  {
+    "id": "details.more_about_location",
+    "defaultMessage": "Подробнее о размещении"
+  }
+]

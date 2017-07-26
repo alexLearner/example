@@ -1,0 +1,149 @@
+html
+	font-size: 14px
+	min-width: 320px
+	-webkit-font-smoothing: antialiased
+	
+iframe
+	max-width: 100% !important
+
+body
+	font-family: $openSans
+	min-height: 100vh
+	min-width: 320px
+	&.overflow
+		-webkit-overflow-scrolling: touch
+	+mobile
+		&.overflow_mobile
+			-webkit-overflow-scrolling: touch
+			overflow: hidden !important
+			
+.wrapper
+	flex-direction: column
+	min-height: 100vh
+	display: flex
+	background: #eee
+	min-width: 320px
+
+.layout
+	width: 100%
+	display: flex
+	flex: 1 auto
+	overflow: hidden
+
+.google_map
+	position: relative
+	padding-bottom: 75% 
+	height: 0
+	overflow: hidden
+
+.google_map iframe
+	position: absolute
+	top: 0
+	left: 0
+	width: 100% !important
+	height: 100% !important
+
+
+.lazy_img
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+
+.slider_items
+	display: flex
+	
+.caption
+	padding: 10px
+	border-radius: 4px
+	overflow: hidden
+	background: #CBE6A3
+	max-width: 212px
+	font-size: 13px
+	font-weight: 600
+	color: $text
+	&.orange
+		background: $orange
+		color: #fff
+		
+.overflow
+	overflow: hidden !important
+.mobile
+	visibility: hidden
+	max-height: 0
+	max-width: 0
+	overflow: hidden
+	
+.no_overflow
+	overflow: visible !important
+
+.icon
+	display: flex
+	align-items: center
+	+td
+
+.black
+	color: $black !important
+.red
+	color: $red !important
+.blue
+	color: $blue !important
+.text
+	color: $text !important
+.gray
+	color: $gray !important
+.green
+	color: $green !important
+.bold
+	font-weight: bold !important
+
+.relative
+	position: relative !important
+
+.link
+	color: $blue
+	font-weight: 600
+	cursor: pointer
+	&:hover
+		text-decoration: underline
+	&.link_mail,
+	&.link_tel
+		font-size: 16px
+		
+.link_tel
+	font-size: 16px
+	font-weight: 600
+	color: $text
+	line-height: 20px
+	&:hover
+		text-decoration: underline
+
+.arrow
+	display: inline-block
+	height: 8px
+	width: 16px
+	position: relative
+	transition-duration: .3s
+	&:before
+		content: ""
+		position: absolute
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 8px 8px 0 8px
+		border-color: #50514c transparent transparent transparent
+		top: 0
+		left: 0
+	&:after
+		content: ""
+		position: absolute
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 7px 7px 0 7px
+		border-color: #fff transparent transparent transparent
+		top: 0
+		left: 1px
+
+
+
+

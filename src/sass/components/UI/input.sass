@@ -1,0 +1,35 @@
+.textarea,
+.input
+	font-size: 14px
+	line-height: (23/14)
+	font-weight: 600
+	padding: 16px
+	border: 2px solid #ebebeb
+	border-radius: 4px
+	background: #fff
+	width: 100%
+	color: $text
+	+td
+	&:focus
+		border-color: $blue
+		outline: none
+	+placeholder
+		color: $gray
+	&.error
+		border-color: $red
+		outline: none
+
+.textarea
+	resize: vertical
+	min-height: 112px
+.input
+	padding: 4.5px 12px
+	&.input_big
+		font-size: 16px
+		padding: 8px 16px
+		+placeholder
+			font-size: 16px
+			
++mobile-sm
+	.textarea
+		min-height: 145px
